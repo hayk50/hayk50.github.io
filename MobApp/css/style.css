@@ -1,4 +1,4 @@
-@charset "UTF-8";
+`@charset "UTF-8";
 
 /*
 
@@ -969,12 +969,24 @@ header {
     }
 
     .opinion_text p {
-        font-size: 14px;
+        font-size: 16px;
         position: relative;
         bottom: 15px;
     }
 
 
+}
+
+@media (min-width:320px) and (max-width: 390px) {
+    .opinion_text p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:601px) and (max-width: 777px) {
+    .opinion_text {
+        font-size: 18px !important;
+    }
 }
 
 @media (min-width:320px) and (max-width: 600px) {
