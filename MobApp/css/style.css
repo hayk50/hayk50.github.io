@@ -979,7 +979,7 @@ header {
 
 @media (min-width:320px) and (max-width: 390px) {
     .opinion_text p {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
@@ -1208,7 +1208,7 @@ textarea {
 /*@media (min-width:768px){.container{max-width:720px}*/
 /*@media (min-width:576px){.container{max-width:540px}*/
 
-/*bootstrap random styles*/
+/*arrow top scroll start*/
 
 #return-to-top {
     position: fixed;
@@ -1250,3 +1250,5 @@ textarea {
     color: #fff;
     top: 5px;
 }
+
+/*arrow top scroll end*/
