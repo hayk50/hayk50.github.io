@@ -1214,8 +1214,7 @@ textarea {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.7);
+    background: #083b66;
     width: 50px;
     height: 50px;
     display: block;
@@ -1244,11 +1243,8 @@ textarea {
     transition: all 0.3s ease;
 }
 #return-to-top:hover {
-    background: rgba(0, 0, 0, 0.9);
+    background: #083b66;
 }
-#return-to-top:hover i {
-    color: #fff;
-    top: 5px;
-}
+
 
 /*arrow top scroll end*/
