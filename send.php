@@ -24,7 +24,7 @@ if(empty($phone)) {
 <?
 }else {
 	
-$email2="t.formy@yandex.ru"; // ----------------------------------------- почта, куда отправляем письмо
+$email2="haykharut14@gmail.com"; // ----------------------------------------- почта, куда отправляем письмо
 $headers  =  'MIME-Version: 1.0' . "\r\n";
 	$headers .=  'Content-type: text/html; charset=UTF-8' . "\r\n";
 	$headers .=  'To: <'.$email2.'>, '."\r\n";
