@@ -1529,7 +1529,10 @@
                         Остались вопросы?
                     </h2>
                     <div class="section_content">
-                        <form class="form js_form" method="post" action="send.php">
+                        <form class="form js_form" action="send.php" 
+    method="POST" 
+    name="order-form"
+    accepted-charset="utf-8">
                             <input type="hidden" value="Форма: остались вопросы?" name="form">
                             <div class="left">
                                 <div class="left_fields">
@@ -1827,7 +1830,7 @@
         <div class="modal modal_price modal_callback" id="callback">
             <div class="modal_wrap">
                 <h2 class="modal_title">Заказать звонок</h2>
-                <form class="form js_form modal_form callback_form" action="send.php">
+                <form class="form js_form modal_form callback_form" >
                     <input type="hidden" value="Обратный звонок" name="form">
                     <div class="left">
                         <div class="left_fields">
