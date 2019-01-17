@@ -1,43 +1,593 @@
-<!doctype html>
-<!--[if lt IE 8]>         <html class="no-js lt-ie8"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Личный кабинет</title>
-        <meta name="description" content="Responsive Admin Web App">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ВОСТОК ПЛЮС</title>
+  <link type="text/css" rel="stylesheet" href="font/fonts.css">    
+  <link type="text/css" rel="stylesheet" href="css/global.css">
+  <link href="favicon.ico" type="image/x-icon" rel="icon">
+  <link href="favicon.ico" type="image/x-icon" rel="shortcut icon">      
+  <script type="text/javascript" src="js/libs/modernizr-2.6.1.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+  <script src="jquery.maskedinput.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>  
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />  
+</head>
+<body>  
+  
+  <!-- /////////////////////////// MODAL-WINDOW \\\\\\\\\\\\\\\\\\\\\\\\ -->  
 
-        <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
-        <!-- Needs images, font... therefore can not be part of main.css -->
-        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="bower_components/weather-icons/css/weather-icons.min.css">
-        <!-- end Needs images -->
+    <a href="#x" class="overlay-zvonokt" id="wind-zakaz-top"></a>  
+    <div class="popup-zvonokt">      
+      <!-- <a class="close" title="Закрыть" href="#close"></a> -->            
+      <div class="popup-form">  
+        <div class="wind-zakaz-top">
+          <p>ОСТАВЬТЕ ЗАЯВКУ НА РАСЧЁТ КОЛИЧЕСТВА МАТЕРИАЛА</p>
+          <form class="s_form" action="index1.php" method="POST">
+            <input class="s_text nameinp sinp copy-form" type="text" name="name" placeholder="Имя">
+            <input class="s_text nameinp sinp copy-form" type="text" name="phone" placeholder="Телефон">
+            <input type="hidden"  name="email" class="email" value="none@none.ru">
+            <input class="s_text adress copy-form" type="text" name="adress" placeholder="Почта">
+            <input type="hidden" value="C" name="button">
+            <input type="hidden"  name="comment" value="None">
+            <input type="hidden" name="form_id" value="ЗАКАЗ ПРАЙС-ЛИСТА">
+            <input class="s_submit copy-form" type="button" value="ОСТАВЬТЕ ЗАЯВКУ">
+          </form>
+        </div> 
+        </div> 
+    </div>
+  <!-- ALL-CONTENS -->
+  <div class="header">
+      
+    <div class="contain">
 
-            
-            <link rel="stylesheet" href="styles/main.css"/>
+      <a href="index.php"><img src="img/logo.png"></a>
+      <p class="rectangle1">
 
-    </head>
-    <body data-ng-app="app" id="app" class="app" data-custom-page="" data-off-canvas-nav="" data-ng-controller="AppCtrl" data-ng-class=" {'layout-boxed': admin.layout === 'boxed' } ">
-        <!--[if lt IE 9]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        НАСТОЙКА<BR>
+        И СОПРОВОЖДЕНИЕ<BR>
+        ВАШЕЙ РЕКЛАМНОЙ КАМПАНИИ
 
-        <section data-ng-include=" 'views/header.html' " id="header" class="header-container" data-ng-class=" {'header-fixed': admin.fixedHeader} " data-ng-controller="HeaderCtrl"></section>
+      </p>      
+      <div class="call-him">
 
-        <div class="main-container">
-            <aside data-ng-include=" 'views/nav.html' " id="nav-container" class="nav-container" data-ng-class=" {'nav-fixed': admin.fixedSidebar, 'nav-horizontal': admin.menu === 'horizontal', 'nav-vertical': admin.menu === 'vertical'}">
-            </aside>
+        <p class="p-register1">
+          ЗВОНОК С МОБИЛЬНЫХ ПО РОССИИ <span>БЕСПЛАТНЫЙ</span>
+        </p>
+        <p class="number">
+          8 800 <span>000 00 00</span>
+        </p>
+        <p class="p-register1">
+          г. Москва, ул. Ленина, дом 110, корпус 2
+        </p>
+        <a class="link-to-modal" href="#wind-zakaz-top">ЗАКАЗАТЬ ЗВОНОК</a>
 
-            <section data-ng-view="" id="content" class="content-container {{admin.pageTransition.class}}"></section>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <div class="fform">
+        <p>ОСТАВЬТЕ ЗАЯВКУ</p> 
+        <p>НА КОНСУЛЬТАЦИЮ</p>
+        <form class="s_form" action="index1.php" method="POST">
+          <input class="s_text nameinp sinp" type="text" name="name" placeholder="Имя">
+          <input class="s_text nameinp sinp" type="text" name="phone" placeholder="Телефон">
+          <input type="hidden"  name="email" class="email" value="none@none.ru">
+          <input class="s_text adress" type="text" name="adress" placeholder="Почта">
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input type="hidden" name="form_id" value="ЗАКАЗ ПРАЙС-ЛИСТА">
+          <input class="s_submit" type="button" value="ОСТАВЬТЕ ЗАЯВКУ">
+        </form>
+      </div>        
+
+    </div>
+
+  </div>
+
+  <div class="how-we-make">
+
+    <div class="contain cont-we-make">
+
+      <div class="text-we-make">
+        <h1>ЧТО МЫ ПРЕДЛАГАЕМ: </h1>
+        <p class="size24">
+          Теплоизоляционный лист Polystek, плотностью 35 кг/м в кубе
+        </p>
+        <hr>
+        <div class="inline">
+          <p class="size20 pad-15">ТОЛЩИНА ЛИСТА</p>
+          <br>
+          <p class="size20">
+            20 мм<br>
+            30 мм<br>
+            40 мм<br>
+            50 мм
+          </p>
+        </div>
+        <div class="inline">
+          <p class="size20 pad-15">ЦЕНА ЗА 1 КВ.М.</p>          
+          <p class="size20">
+            130 руб.<br>
+            180 руб.<br>
+            230 руб.<br>
+            270 руб.
+          </p>
+        </div>
+        <div class="inline">
+          <p class="size20 pad-15">ЦЕНА ЗА ЛИСТ<br>
+                            1,2 х 0,6м</p>          
+          <p class="size20">
+            168,9 руб.<br>
+            238,3 руб.<br>
+            307,8 руб.<br>
+            367,2 руб.
+          </p>
+        </div>
+      </div>
+
+    </div>    
+
+  </div>
+
+  <div class="contain">
+
+    <p class="my-title">СЕРТИФИКАТЫ <span class="blue">КАЧЕСТВА</span></p>
+    <div class="certificates">
+        <a href="#certificate1" title="Увеличить"><img alt="art-record" src="images/certificates/certificate1-min.jpg"></a>      
+        <a href="#certificate2" title="Увеличить"><img alt="art-record" src="images/certificates/certificate2-min.jpg"></a>      
+        <a href="#certificate3" title="Увеличить"><img alt="art-record" src="images/certificates/certificate3-min.jpg"></a>        
+        <a href="#certificate4" title="Увеличить"><img alt="art-record" src="images/certificates/certificate4-min.jpg"></a>        
+        <a href="#certificate5" title="Увеличить"><img alt="art-record" src="images/certificates/certificate5-min.jpg"></a>
+        <a href="#certificate6" title="Увеличить"><img alt="art-record" src="images/certificates/certificate6-min.jpg"></a>
+        
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS --><!-- BIG-PHOTOS -->
+        <a href="#x" class="walet-overlay" id="certificate1"></a>
+        <div class="walet-popup">    
+          <div class="walet-feedbackf">
+            <a class="walet-closef" title="Закрыть" href="#close"></a>         
+            <img alt="walet-vostok-plus"  src="images/certificates/certificate1.png">        
+          </div>      
         </div>
 
+        <a href="#x" class="walet-overlay" id="certificate2"></a>
+        <div class="walet-popup">    
+          <div class="walet-feedbackf">
+            <a class="walet-closef" title="Закрыть" href="#close"></a>         
+            <img alt="vostok-plus"  src="images/certificates/certificate2.png">        
+          </div>      
+        </div>
 
-        <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-        <script src="scripts/vendor.js"></script>
+        <a href="#x" class="walet-overlay" id="certificate3"></a>
+        <div class="walet-popup">    
+          <div class="walet-feedbackf">
+            <a class="walet-closef" title="Закрыть" href="#close"></a>         
+            <img alt="vostok-plus"  src="images/certificates/certificate3.png">        
+          </div>      
+        </div>
 
-        <script src="scripts/ui.js"></script>
+        <a href="#x" class="walet-overlay" id="certificate4"></a>
+        <div class="walet-popup">    
+          <div class="walet-feedbackf">
+            <a class="walet-closef" title="Закрыть" href="#close"></a>         
+            <img alt="vostok-plus"  src="images/certificates/certificate4.png">        
+          </div>      
+        </div>
 
-        <script src="scripts/app.js"></script>
-    </body>
+        <a href="#x" class="walet-overlay" id="certificate5"></a>
+        <div class="walet-popup">    
+          <div class="walet-feedbackf">
+            <a class="walet-closef" title="Закрыть" href="#close"></a>         
+            <img alt="vostok-plus"  src="images/certificates/certificate5.png">        
+          </div>      
+        </div> 
+
+        <a href="#x" class="walet-overlay" id="certificate6"></a>
+        <div class="walet-popup">    
+          <div class="walet-feedbackf">
+            <a class="walet-closef" title="Закрыть" href="#close"></a>         
+            <img alt="avostok-plus"  src="images/certificates/certificate6.png">        
+          </div>      
+        </div> 
+    </div>
+
+  </div>
+
+  <div class="form">    
+      <div class="fform-inline">         
+        <p>ОСТАВЬТЕ ЗАЯВКУ НА РАСЧЁТ КОЛИЧЕСТВА МАТЕРИАЛА</p>
+        <form class="s_form" action="index1.php" method="POST">
+          <input class="s_text nameinp sinp copy-form" type="text" name="name" placeholder="Имя">
+          <input class="s_text nameinp sinp copy-form" type="text" name="phone" placeholder="Телефон">
+          <input type="hidden"  name="email" class="email" value="none@none.ru">
+          <input class="s_text adress copy-form" type="text" name="adress" placeholder="Почта">
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input type="hidden" name="form_id" value="ЗАКАЗ ПРАЙС-ЛИСТА">
+          <input class="s_submit copy-form" type="button" value="ОСТАВЬТЕ ЗАЯВКУ">
+        </form>
+      </div>    
+  </div>
+
+  <div class="contain">
+
+    <p class="my-title">ПРИМЕНЕНИЕ <span class="blue">ПОЛИУРЕТАНА</span></p>
+    <div class="priminenie">
+    </div>
+
+  </div>
+
+  <div class="contain yes-no">
+
+    <div class="no">
+      <p class="title2">ПРОБЛЕМЫ С КОТОРЫМИ СТАЛКИВАЮТСЯ 95% КЛИЕНТОВ:</p>
+      <ul>
+        <li><span>ПОСТАВЩИК СРЫВАЕТ СРОКИ</span><br>
+            В результате на складе нет продукции,<br>
+            вы теряете деньги, а поставщик за это не отвечает.
+        </li>
+        <li><span>ЦЕНА НЕАДЕКВАТНАЯ</span><br>
+        80% предложений на рынке - посредники. И посредники посредников. В итоге вы покупаете через 10 фирм. И переплачиваете во много раз.
+        </li>
+        <li><span>НИКАКИХ ГАРАНТИЙ</span><br>
+        Когда вам продают через цепочку, вы покупаете без гарантий производителя. И концы в воду. Непонятно к кому обращаться. Завтра компания, у которой вы купили, просто пропадет.
+        </li>
+        <li><span>КИДАЮТ</span><br>
+        Делают неадекватно низкое по цене предложение. Берут предоплату 100%. И исчезают. 
+        </li>
+      </ul>
+    </div>
+
+    <div class="yes">
+      <p class="title2 blue">ПОЧЕМУ СТОИТ РАБОТАТЬ ИМЕННО С НАМИ?</p>
+      <ul>
+      <ul>
+        <li><span>ТОЧНО В СРОК</span><br>
+            Гарантированное исполнение сроков заказа.
+        </li>
+        <li><span>ЛУЧШАЯ ЦЕНА</span><br>
+            Вы останетесь довольны ценой, т.к. для оптовых покупателей  мы предоставляем  особые условия.
+        </li>
+        <li><span>МЫ ЯВЛЯЕМСЯ ПРОИЗВОДИТЕЛЯМИ</span><br>
+            Товар не проходит через торговых посредников, тем самым дорожая.
+        </li>
+        <li><span>ВЫСОКОКАЧЕСТВЕННОЕ СЫРЬЁ</span><br>
+            От европейского производителя HAUSMAN.
+        </li>
+        <li><span>НАША ПРОДУКЦИЯ СЕРТИФИЦИРОВАНА</span><br>
+            Все изделия изготавливаются в соответствии  с
+            нормами  технической документации и соблюдением всех правил, что  подтверждается сертификатами.
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="form">    
+      <div class="fform-inline">         
+        <p>ОСТАВЬТЕ ЗАЯВКУ НА РАСЧЁТ КОЛИЧЕСТВА МАТЕРИАЛА</p>
+        <form class="s_form" action="index1.php" method="POST">
+          <input class="s_text nameinp sinp copy-form" type="text" name="name" placeholder="Имя">
+          <input class="s_text nameinp sinp copy-form" type="text" name="phone" placeholder="Телефон">
+          <input type="hidden"  name="email" class="email" value="none@none.ru">
+          <input class="s_text adress copy-form" type="text" name="adress" placeholder="Почта">
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input type="hidden" name="form_id" value="ЗАКАЗ ПРАЙС-ЛИСТА">
+          <input class="s_submit copy-form" type="button" value="ОСТАВЬТЕ ЗАЯВКУ">
+        </form>
+      </div>    
+  </div>
+
+  <div class="contain">
+    <p class="my-title"><span class="blue">ОСНОВНЫЕ ПРЕИМУЩЕСТВА</span> ТЕПЛОИЗОЛЯЦИОННЫХ<br>
+                     ПЛИТ ИЗ ПЕНОПОЛИУРЕТАНА</p>
+    <div class="n-left">
+      <img class="preim" src="img/numbers/1.png">
+      <p class="preim paragraph"><span class="bold">ТЕПЛОПРОВОДНОСТЬ</span><br>
+                                          В 1,5 раза теплее пенополистирола, в 2,2 раза теплее минеральной ваты,<br>
+                                          в 25 раз теплее силикатного кирпича.</p>
+    </div>
+    <div class="n-right">      
+      <p class="preim paragraph"><span class="bold">ЛЁГКИЙ МАТЕРИАЛ</span><br>
+                                                    Вес одной плиты площадью 0,72м2 составляет около от 800 до 1500гр в зависимости от плотности.</p>
+      <img class="preim" src="img/numbers/2.png">                                          
+    </div>
+    <div class="n-left">
+      <img class="preim" src="img/numbers/3.png">
+      <p class="preim paragraph"><span class="bold">СТОЙКОСТЬ К АГРЕССИВНЫМ СРЕДАМ</span><br>
+                                                    (Бензину, бензолу, разбавленным кислотам, маслам, спиртам).</p>
+    </div>
+    <div class="n-right">      
+      <p class="preim paragraph"><span class="bold">БИОСТОЙКОСТЬ</span><br>
+                                                    Не подвержен воздействию микроорганизмов, плесени, гниению, его не едят грызуны;</p>
+      <img class="preim" src="img/numbers/4.png">                                          
+    </div>
+    <div class="n-left">
+      <img class="preim" src="img/numbers/5.png">
+      <p class="preim paragraph"><span class="bold">ЭКОЛОГИЧЕСКИ ЧИСТ</span><br>
+                                                    Не имеет запаха и не оказывает влияния на физиологию человека.</p>
+    </div>
+    <div class="n-right">      
+      <p class="preim paragraph"><span class="bold">ДОЛГИЙ СРОК ЭКСПЛУАТАЦИИ</span><br>                                          
+                                                    Более 30 лет</p>
+      <img class="preim" src="img/numbers/6.png">                                          
+    </div>
+    <div class="n-left">
+      <img class="preim" src="img/numbers/7.png">
+      <p class="preim paragraph"><span class="bold">ПРИМЕНЕНИЕ В ШИРОКОМ ДИАПАЗОНЕ ТЕМПЕРАТУР</span><br>
+                                                    От -180 С до +180 С.</p>
+    </div>
+    <div class="n-right">      
+      <p class="preim paragraph"><span class="bold">ПРОСТОТА В МОНТАЖЕ</span><br>
+                                                    При установке плит не требуется специального инструмента и специфических навыков.
+      </p>
+      <img class="preim" src="img/numbers/8.png">                                          
+    </div>
+    <div class="n-left">
+      <img class="preim" src="img/numbers/9.png">
+      <p class="preim paragraph"><span class="bold">ЭКОНОМИЯ ОБЪЁМА УТЕПЛЯЕМОГО ПОМЕЩЕНИЯ</span><br>
+                                                    Для создания необходимого уровня теплозащиты требуется более тонкий слой утеплителя из ППУ по сравнению с другими утеплителями.
+      </p>
+    </div>       
+
+    <p class="my-title-tab">СРАВНИТЕЛЬНАЯ <span class="blue">ТАБЛИЦА</span></p>
+    <div class="contain">
+    <table cellspacing="0">
+      <tr class="table-row table-top">
+        <td style="text-align: center;">ПОКАЗАТЕЛИ</td>
+        <td class="blue">ПЕНОПОЛИУРЕТАН</td>
+        <td>ПЕНОПОЛИСТЕРОЛ</td>
+        <td>ПЕНОПЛАСТ</td>
+        <td>МИНЕРАЛ. ВАТА</td>
+      </tr>
+      <tr class="table-row">
+        <td>Коэффициент<br>теплопроводности,  Вт/мK</td>
+        <td>0,019-0,03</td>
+        <td>0,032-0,035</td>
+        <td>0,04</td>
+        <td>0,045-0,05 (сухая)<br>0,18-0,2 (влажная)</td>
+      </tr>
+      <tr class="table-row">
+        <td>Толщина покрытия <br>(Новосибирск), мм</td>
+        <td>100-150 мм.</td>
+        <td>120-170 мм.</td>
+        <td>130-200 мм.</td>
+        <td>160-240 мм.</td>
+      </tr>
+      <tr class="table-row">
+        <td>Адгезия к кирпичу, бетону, металлу, древесине, кг/см²</td>
+        <td>01,5-3 кг/см²</td>
+        <td>Отсутствует</td>
+        <td>Отсутствует</td>
+        <td>Отсутствует</td>
+      </tr>
+      <tr class="table-row">
+        <td>Мостики холода</td>
+        <td>Нет</td>
+        <td>Да</td>
+        <td>Да</td>
+        <td>Да</td>
+      </tr>
+      <tr class="table-row">
+        <td>Наличие слоя паропроницаемости, мг/(м ч Па)</td>
+        <td>0,1-0,5</td>
+        <td>0.001</td>
+        <td>0,03</td>
+        <td>0,5</td>
+      </tr>
+      <tr class="table-row">
+        <td>Водопоглощение по массе, %</td>
+        <td>1</td>
+        <td>0.5</td>
+        <td>2</td>
+        <td>10-15</td>
+      </tr>
+      <tr class="table-row">
+        <td>Производство работ, °C</td>
+        <td>+5С /+30 °C</td>
+        <td>+5С /+30 °C</td>
+        <td>+5С /+30 °C</td>
+        <td>+5С /+30 °C</td>
+      </tr>
+      <tr class="table-row">
+        <td>Температура применения, °C </td>
+        <td>-180…+100</td>
+        <td>-50…+75</td>
+        <td>-180…+80</td>
+        <td>-60…+270</td>
+      </tr>
+      <tr class="table-row">
+        <td>Микроорганизмы, грызуны</td>
+        <td>Устойчив <br><span class="black">(исследования АО НИИ "Полимерсинтез", г.Владимир)</td>
+        <td>Менее устойчив </td>
+        <td>Неустойчив </td>
+        <td>Неустойчив </td>
+      </tr>
+      <tr class="table-row">
+        <td>Влага, агрессивные среды </td>
+        <td>Устойчив </td>
+        <td>Менее устойчив </td>
+        <td>Слабо устойчив </td>
+        <td>Теплоизоляц. свойства теряются, восстановлению не подлежат </td>
+      </tr>
+      <tr class="table-row">
+        <td>Усадка при эксплуатации </td>
+        <td>Нет </td>
+        <td>Нет </td>
+        <td>Нет </td>
+        <td>Да</td>
+      </tr>
+      <tr class="table-row">
+        <td>Эффективный срок службы, лет </td>
+        <td>25-50 лет </td>
+        <td>15-30 лет </td>
+        <td>10-15 лет </td>
+        <td>5 лет </td>
+      </tr>
+      <tr class="table-row">
+        <td>Группа горючести</td>
+        <td>Г1, Г2</td>
+        <td>Г4</td>
+        <td>Г3-Г4</td>
+        <td>НГ-Г1</td>
+      </tr>
+      <tr class="table-row table-bottom">
+        <td>Фактические тепловые потери</td>
+        <td>В 1,7 раза ниже<br><span class="black">нормативных СниП 2.04.14-88 Энергосбе-<br>режение, №1, 1999 г.</span></td>
+        <td>Нет данных </td>
+        <td>Нет данных </td>
+        <td>Превышение нормативных СниП после 12 месяцев эксплуатации.</td>
+      </tr>
+    </table>
+    </div>
+    </div>
+
+    <div class="form">    
+      <div class="fform-inline">         
+        <p>ОСТАВЬТЕ ЗАЯВКУ НА РАСЧЁТ КОЛИЧЕСТВА МАТЕРИАЛА</p>
+        <form class="s_form" action="index1.php" method="POST">
+          <input class="s_text nameinp sinp copy-form" type="text" name="name" placeholder="Имя">
+          <input class="s_text nameinp sinp copy-form" type="text" name="phone" placeholder="Телефон">
+          <input type="hidden"  name="email" class="email" value="none@none.ru">
+          <input class="s_text adress copy-form" type="text" name="adress" placeholder="Почта">
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input type="hidden" name="form_id" value="ЗАКАЗ ПРАЙС-ЛИСТА">
+          <input class="s_submit copy-form" type="button" value="ОСТАВЬТЕ ЗАЯВКУ">
+        </form>
+      </div>    
+    </div>
+
+    <div class="rewivs contain">
+      <p class="my-title"><span class="blue">ОТЗЫВЫ</span> НАШИХ КЛИЕНТОВ</p><br>
+
+      <div class="one-rewiv">
+        <div class="text-reviw">
+          <p>Выражаем Вам, а также Вашим сотрудникам,
+благодарность за высококачественную продукцию и своевременную доставку груза. Приятно
+удивили низкие цены. Вы показали себя
+профессионалами в своем деле, тем самым
+зарекомендовав себя, в качестве ответственной, исполнительной и квалифицированной компании. 
+Желаем Вам развития и процветания!
+</p>
+        </div>
+        <p class="commentator">Николай Мильман, ООО «Мегастрой», г. Казань</p>
+      </div>
+
+      <div class="one-rewiv">
+        <div class="text-reviw">
+          <p>ООО «Строймир Поволжье» выражает
+признательность  компании  за плодотворное
+взаимовыгодное сотрудничество.  Надеемся на дальнейшее сотрудничество и рекомендуем
+компанию OOO «Восток плюс» как опытного,
+высококвалифицированного и ответственного специалиста.</p>
+        </div>
+        <p class="commentator">Дмитрий Титаренко, OOO «Строймир Поволжье», г. Казань</p>
+      </div>
+
+      <div class="one-rewiv">
+        <div class="text-reviw">
+          <p>Искала  утеплитель для своего дома, оставила заявку на сайте, очень оперативно отреагировали на заказ. Также оперативно отправили.  Очень выгодно отличаются от других производителей ценой. Приятно удивило, что позвонили после получения груза, интересовались качеством
+доставки и обслуживания.</p>
+        </div>
+        <p class="commentator">Екатерина Озерова, г. Нижний Новгород.</p>
+      </div>
+
+      <div class="one-rewiv">
+        <div class="text-reviw">
+          <p>ООО «Араванна" выражает свою благодарность компании ООО «Восток плюс" за производство качественного продукта , позволяющего клиенту решить задачу теплоизоляции в короткий срок с минимальными удельными затратами,
+соответствующий всем требованиям рынка, а также нормам экологичности. Мы рекомендуем эту компанию как профессионального,
+эффективного и надежного партнера.
+</p>
+        </div>
+        <p class="commentator">Антон Кислов, ООО «Араванна», г. Казань</p>
+      </div>
+
+    </div>
+
+    <div class="contain">
+      <p class="my-title">НАШЕ <span class="blue">ПРОИЗВОДСТВО</span></p>
+      <img class="production" src="img/production.png">
+    </div>
+
+    <div class="contain">
+      <p class="my-title"><span class="blue">СХЕМА</span> РАБОТЫ</p>
+      <div class="plan">
+        <img src="img/plan1.png"><br>
+        <p>Заявка или звонок</p>
+      </div>
+      <div class="plan">
+        <img src="img/plan2.png"><br>
+        <p>Расчет<br>количества <br>материала</p>
+      </div>
+      <div class="plan">
+        <img src="img/plan3.png">
+        <p>Заключение договора</p>
+      </div>
+      <div class="plan">
+        <img src="img/plan4.png">
+        <p>Предоплата<br> или оплата полностью</p>
+      </div>
+      <div class="plan">
+        <img src="img/plan5.png">
+        <p>Доставка вашего заказа</p>
+      </div>
+    </div>
+
+    <div class="form">    
+      <div class="fform-inline">         
+        <p>ОСТАВЬТЕ ЗАЯВКУ НА РАСЧЁТ КОЛИЧЕСТВА МАТЕРИАЛА</p>
+        <form class="s_form" action="index1.php" method="POST">
+          <input class="s_text nameinp sinp copy-form" type="text" name="name" placeholder="Имя">
+          <input class="s_text nameinp sinp copy-form" type="text" name="phone" placeholder="Телефон">
+          <input type="hidden"  name="email" class="email" value="none@none.ru">
+          <input class="s_text adress copy-form" type="text" name="adress" placeholder="Почта">
+          <input type="hidden" value="C" name="button">
+          <input type="hidden"  name="comment" value="None">
+          <input type="hidden" name="form_id" value="ЗАКАЗ ПРАЙС-ЛИСТА">
+          <input class="s_submit copy-form" type="button" value="ОСТАВЬТЕ ЗАЯВКУ">
+        </form>
+      </div>    
+    </div>
+
+    <div class="contain">
+
+      <a href="index/php"><img src="img/logo.png"></a>
+      <p class="rectangle1">
+
+        ПРОИЗВОДСТВО И ПРОДАЖА<BR>
+        ПЕНОПОЛИУРЕТАНОВЫХ ПЛИТ ОПТОМ.<BR>
+        ДОСТАВКА ПО РОССИИ.
+
+      </p>      
+      <div class="call-him">
+
+        <p class="p-register1">
+          ЗВОНОК С МОБИЛЬНЫХ ПО РОССИИ <span>БЕСПЛАТНЫЙ</span>
+        </p>
+        <p class="number">
+          8 800 <span>000 00 00</span>
+        </p>
+        <p class="p-register1">
+          г. Москва, ул. Ленина, дом 110, корпус 2
+        </p>
+        <a class="link-to-modal" href="#wind-zakaz-top">ЗАКАЗАТЬ ЗВОНОК</a>
+
+      </div>  
+      <div class="footer">    
+     
+      <p class="inline-footer">&copy; 2013 Все права защищены</p>
+      </div>
+    </div>
+
+    <script src="js/jquery.countdown.js"></script>
+  </body>
 </html>
