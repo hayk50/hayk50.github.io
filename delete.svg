@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.151 24.151">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Rotate_Opacity" data-name="Rotate + Opacity" transform="translate(12.157) rotate(45)">
+    <path id="Combined_Shape" data-name="Combined Shape" class="cls-1" d="M7.191,15.9V9.887H1.29a1.29,1.29,0,0,1,0-2.58h5.9V1.29a1.29,1.29,0,1,1,2.579,0V7.306h5.9a1.29,1.29,0,0,1,0,2.58H9.77V15.9a1.29,1.29,0,1,1-2.579,0Z"/>
+  </g>
+</svg>
