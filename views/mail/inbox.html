@@ -1,0 +1,30 @@
+<div class="page page-dashboard" data-ng-controller="DashboardCtrl">
+<div class="row">
+       
+        <div class="col-lg-12">
+                <div class="callout callout-success">
+                <h4>Пополнения баланса</h4>
+                <p>Уважаемый клиент! Для того чтобы пополнить баланс, оформите вывод денежных средств.</p>
+        <button class="btn btn-w-lg btn-success btn-gap" tooltip-placement="top" tooltip="У Вас нет активной карты" tooltip-append-to-body="true">Пополнить баланс</button>&nbsp<button class="btn btn-w-lg btn-primary btn-gap" tooltip-placement="top" tooltip="У Вас нет активной карты" tooltip-append-to-body="true">Продлить</button>
+
+            </div>
+
+<!-- Tab -->
+    <section class="panel panel-default">
+        <div class="panel-heading"><span class="glyphicon glyphicon-calendar"></span> История операций</div>
+        <div class="panel-body" data-ng-controller="TabsDemoCtrl">
+
+            
+
+                <div class="col-sm-12">
+                     <div class="divider"></div>
+                    <tabset class="ui-tab">
+                        <tab heading="Входящие платежи">Операций по Вашему аккаунту не найдено.</tab>
+                        <tab heading="Исходящие платежи">Операций по Вашему аккаунту не найдено.</tab>
+                        <tab heading="Начисленные штрафы и пени">Операций по Вашему аккаунту не найдено.</tab>
+                    </tabset>
+            </div>
+
+
+        </div>
+    </section>
