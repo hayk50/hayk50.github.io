@@ -1,0 +1,144 @@
+/* Connect font "Roboto-Thin"; */
+@font-face {
+    font-family: 'Roboto';
+    src: local("Roboto"), local("Roboto-Thin"),
+         url('RobotoThin.eot')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoThin/RobotoThin.eot*/ format('embedded-opentype'),
+         url('RobotoThin.woff2')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoThin/RobotoThin.woff2*/ format('woff2'),
+         url('RobotoThin.woff')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoThin/RobotoThin.woff*/ format('woff'),
+         url('RobotoThin.ttf')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoThin/RobotoThin.ttf*/ format('truetype'),
+         url('RobotoThin.svg#RobotoThin')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoThin/RobotoThin.svg#RobotoThin*/ format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+/* Connect font "Roboto-ThinItalic"; */
+@font-face {
+    font-family: 'Roboto';
+    src: local("Roboto"), local("Roboto-ThinItalic"),
+         url('RobotoThinItalic.eot')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoThinItalic/RobotoThinItalic.eot*/ format('embedded-opentype'),
+         url('RobotoThinItalic.woff2')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoThinItalic/RobotoThinItalic.woff2*/ format('woff2'),
+         url('RobotoThinItalic.woff')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoThinItalic/RobotoThinItalic.woff*/ format('woff'),
+         url('RobotoThinItalic.ttf')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoThinItalic/RobotoThinItalic.ttf*/ format('truetype'),
+         url('RobotoThinItalic.svg#RobotoThinItalic')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoThinItalic/RobotoThinItalic.svg#RobotoThinItalic*/ format('svg');
+    font-weight: 100;
+    font-style: italic;
+}
+/* Connect font "Roboto-Light"; */
+@font-face {
+    font-family: 'Roboto';
+    src: local("Roboto"), local("Roboto-Light"),
+         url('RobotoLight.eot')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoLight/RobotoLight.eot*/ format('embedded-opentype'),
+         url('RobotoLight.woff2')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoLight/RobotoLight.woff2*/ format('woff2'),
+         url('RobotoLight.woff')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoLight/RobotoLight.woff*/ format('woff'),
+         url('RobotoLight.ttf')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoLight/RobotoLight.ttf*/ format('truetype'),
+         url('RobotoLight.svg#RobotoLight')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoLight/RobotoLight.svg#RobotoLight*/ format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+/* Connect font "Roboto-LightItalic"; */
+@font-face {
+    font-family: 'Roboto';
+    src: local("Roboto"), local("Roboto-LightItalic"),
+         url('RobotoLightItalic.eot')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoLightItalic/RobotoLightItalic.eot*/ format('embedded-opentype'),
+         url('RobotoLightItalic.woff2')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoLightItalic/RobotoLightItalic.woff2*/ format('woff2'),
+         url('RobotoLightItalic.woff')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoLightItalic/RobotoLightItalic.woff*/ format('woff'),
+         url('RobotoLightItalic.ttf')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoLightItalic/RobotoLightItalic.ttf*/ format('truetype'),
+         url('RobotoLightItalic.svg#RobotoLightItalic')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoLightItalic/RobotoLightItalic.svg#RobotoLightItalic*/ format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+/* Connect font "Roboto-Regular"; */
+@font-face {
+    font-family: 'Roboto';
+    src: local("Roboto"), local("Roboto-Regular"),
+         url('RobotoRegular.eot')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoRegular/RobotoRegular.eot*/ format('embedded-opentype'),
+         url('RobotoRegular.woff2')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoRegular/RobotoRegular.woff2*/ format('woff2'),
+         url('RobotoRegular.woff')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoRegular/RobotoRegular.woff*/ format('woff'),
+         url('RobotoRegular.ttf')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoRegular/RobotoRegular.ttf*/ format('truetype'),
+         url('RobotoRegular.svg#RobotoRegular')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoRegular/RobotoRegular.svg#RobotoRegular*/ format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+/* Connect font "Roboto-Italic"; */
+@font-face {
+    font-family: 'Roboto';
+    src: local("Roboto"), local("Roboto-Italic"),
+         url('RobotoItalic.eot')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoItalic/RobotoItalic.eot*/ format('embedded-opentype'),
+         url('RobotoItalic.woff2')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoItalic/RobotoItalic.woff2*/ format('woff2'),
+         url('RobotoItalic.woff')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoItalic/RobotoItalic.woff*/ format('woff'),
+         url('RobotoItalic.ttf')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoItalic/RobotoItalic.ttf*/ format('truetype'),
+         url('RobotoItalic.svg#RobotoItalic')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoItalic/RobotoItalic.svg#RobotoItalic*/ format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+/* Connect font "Roboto-Medium"; */
+@font-face {
+    font-family: 'Roboto';
+    src: local("Roboto"), local("Roboto-Medium"),
+         url('RobotoMedium.eot')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoMedium/RobotoMedium.eot*/ format('embedded-opentype'),
+         url('RobotoMedium.woff2')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoMedium/RobotoMedium.woff2*/ format('woff2'),
+         url('RobotoMedium.woff')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoMedium/RobotoMedium.woff*/ format('woff'),
+         url('RobotoMedium.ttf')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoMedium/RobotoMedium.ttf*/ format('truetype'),
+         url('RobotoMedium.svg#RobotoMedium')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoMedium/RobotoMedium.svg#RobotoMedium*/ format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+/* Connect font "Roboto-MediumItalic"; */
+@font-face {
+    font-family: 'Roboto';
+    src: local("Roboto"), local("Roboto-MediumItalic"),
+         url('RobotoMediumItalic.eot')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoMediumItalic/RobotoMediumItalic.eot*/ format('embedded-opentype'),
+         url('RobotoMediumItalic.woff2')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoMediumItalic/RobotoMediumItalic.woff2*/ format('woff2'),
+         url('RobotoMediumItalic.woff')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoMediumItalic/RobotoMediumItalic.woff*/ format('woff'),
+         url('RobotoMediumItalic.ttf')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoMediumItalic/RobotoMediumItalic.ttf*/ format('truetype'),
+         url('RobotoMediumItalic.svg#RobotoMediumItalic')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoMediumItalic/RobotoMediumItalic.svg#RobotoMediumItalic*/ format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+/* Connect font "Roboto-Bold"; */
+@font-face {
+    font-family: 'Roboto';
+    src: local("Roboto"), local("Roboto-Bold"),
+         url('RobotoBold.eot')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoBold/RobotoBold.eot*/ format('embedded-opentype'),
+         url('RobotoBold.woff2')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoBold/RobotoBold.woff2*/ format('woff2'),
+         url('RobotoBold.woff')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoBold/RobotoBold.woff*/ format('woff'),
+         url('RobotoBold.ttf')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoBold/RobotoBold.ttf*/ format('truetype'),
+         url('RobotoBold.svg#RobotoBold')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoBold/RobotoBold.svg#RobotoBold*/ format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+/* Connect font "Roboto-BoldItalic"; */
+@font-face {
+    font-family: 'Roboto';
+    src: local("Roboto"), local("Roboto-BoldItalic"),
+         url('RobotoBoldItalic.eot')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoBoldItalic/RobotoBoldItalic.eot*/ format('embedded-opentype'),
+         url('RobotoBoldItalic.woff2')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoBoldItalic/RobotoBoldItalic.woff2*/ format('woff2'),
+         url('RobotoBoldItalic.woff')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoBoldItalic/RobotoBoldItalic.woff*/ format('woff'),
+         url('RobotoBoldItalic.ttf')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoBoldItalic/RobotoBoldItalic.ttf*/ format('truetype'),
+         url('RobotoBoldItalic.svg#RobotoBoldItalic')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoBoldItalic/RobotoBoldItalic.svg#RobotoBoldItalic*/ format('svg');
+    font-weight: 700;
+    font-style: italic;
+}
+/* Connect font "Roboto-Black"; */
+@font-face {
+    font-family: 'Roboto';
+    src: local("Roboto"), local("Roboto-Black"),
+         url('RobotoBlack.eot')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoBlack/RobotoBlack.eot*/ format('embedded-opentype'),
+         url('RobotoBlack.woff2')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoBlack/RobotoBlack.woff2*/ format('woff2'),
+         url('RobotoBlack.woff')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoBlack/RobotoBlack.woff*/ format('woff'),
+         url('RobotoBlack.ttf')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoBlack/RobotoBlack.ttf*/ format('truetype'),
+         url('RobotoBlack.svg#RobotoBlack')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoBlack/RobotoBlack.svg#RobotoBlack*/ format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+/* Connect font "Roboto-BlackItalic"; */
+@font-face {
+    font-family: 'Roboto';
+    src: local("Roboto"), local("Roboto-BlackItalic"),
+         url('RobotoBlackItalic.eot')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoBlackItalic/RobotoBlackItalic.eot*/ format('embedded-opentype'),
+         url('RobotoBlackItalic.woff2')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoBlackItalic/RobotoBlackItalic.woff2*/ format('woff2'),
+         url('RobotoBlackItalic.woff')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoBlackItalic/RobotoBlackItalic.woff*/ format('woff'),
+         url('RobotoBlackItalic.ttf')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoBlackItalic/RobotoBlackItalic.ttf*/ format('truetype'),
+         url('RobotoBlackItalic.svg#RobotoBlackItalic')/*tpa=http://684222.ru/wp-content/themes/potolki/fonts/RobotoBlackItalic/RobotoBlackItalic.svg#RobotoBlackItalic*/ format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
