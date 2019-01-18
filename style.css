@@ -1,0 +1,143 @@
+hr {
+  height: 100vh;
+}
+
+#one {
+  height: auto;
+}
+
+#two {
+}
+
+#three {
+  /*height: 600px;
+  background: black;*/
+}
+
+/*#four {
+  height: 300px;
+  background: yellow;
+}*/
+
+.tabs {
+  display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.tabs a {
+    text-decoration: none;
+    color: black;
+    border: 2px solid #e047db;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 5px;
+}
+
+.top-title h1 {
+  color: white;
+}
+
+.top-title {
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 85%;
+    margin: auto;
+    background: #00BCD4;
+    text-align: center;
+    /* color: white; */
+}
+
+.content {
+    /* float: left; */
+    width: 60%;
+    /* margin: auto; */
+    /* float: left; */
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.top-text {
+    display: flex;
+    justify-content: space-between;
+/*    border: 1px solid;
+*/    align-items: center;
+}
+
+.text-rose {
+    background: #e047db;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    /* margin-right: 18px; */
+}
+
+.text-rose p {
+    color: white;
+    margin: 0;
+    padding-right: 10px;
+    padding-left: 18px;
+}
+
+.bottom-text {
+/*    text-align: center;
+*/    width: 60%;
+    margin: auto;
+}
+
+.bottom-text p {
+  margin: 0;
+
+}
+
+.text-justify {
+    margin-left: 100px;
+  text-align: justify;
+}
+
+.content-price {
+    /* width: 20%; */
+    /* float: right; */
+}
+
+.content-price p {
+  color: #e047db;
+}
+
+.content-center {
+    /*display: flex;
+    justify-content: center;*/
+    margin: auto;
+}
+
+.text-bold {
+/*      margin-left: 18px;
+*/      font-weight: bold;
+width: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
