@@ -139,11 +139,19 @@ hr {
 .content-price {
     /* width: 20%; */
     /* float: right; */
-    width: 42px;
+    width: 10%;
 }
 
 .content-price p {
   color: #e5619a;
+}
+
+@media screen (max-width: 991px) {
+  .content-price {
+    /* width: 20%; */
+    /* float: right; */
+    width: 2%;
+}
 }
 
 .content-center {
