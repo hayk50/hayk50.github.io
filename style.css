@@ -139,6 +139,7 @@ hr {
 .content-price {
     /* width: 20%; */
     /* float: right; */
+    width: 42px;
 }
 
 .content-price p {
