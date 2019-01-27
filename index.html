@@ -1,352 +1,1050 @@
-<?php require 'functions.php'; ?><?php header('Content-type: text/html; charset=utf-8');
-$ini = parse_ini_file('./config/config.ini'); 
-if (!$ini) {
-	echo 'Ошибка в конфигурационном файле'; die();
-}	?><!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="user-scalable=yes, width=1020, initial-scale=1"><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"><link rel="icon" href="/favicon.ico" type="image/x-icon"><link href="css/sreset.css" rel="stylesheet" type="text/css"><!-- User CSS --><link href="css/style.css" rel="stylesheet" type="text/css"><link href="http://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=cyrillic,latin" rel="stylesheet" type="text/css"><link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css"><script type="text/javascript" src="js/jquery-1.9.1.min.js"></script><script type="text/javascript" src="js/jquery.maskedinput.min.js"></script><script type="text/javascript" src="js/jquery.form.js"></script><!-- User JS --><script type="text/javascript" src="js/script.js"></script><script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><title><?php print $ini['title'];?></title><?php if ($ini['head_code']) include($ini['head_code']); ?></head><body data-metrika="<?php if ($ini['metrika_id']) print $ini['metrika_id'];?>">
-        <!-- VWO Container -->
-        <div id="root_container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
 
-            <div class="header">
-                <div class="inner">                	
-                    <div class="logo" contenteditable="true" id="id-block1"><img src="i/logo.png" alt=""></div>
-                    <span data-offset="-120" href=".promo" class="scroll-link btn">ОТПРАВИТЬ ЗАЯВКУ</span>
-                    <span class="open-modal call-req" data-modal="#call">Заказать звонок</span>
-                    <?php if ($ini['phone']) {?><span class="phone"><?php print $ini['phone'];?></span><?php } ?></div>
+    <meta property="og:image:width" content="655"/>
+    <meta property="og:image:height" content="287"/>
+    <meta property="og:title" content="АВТОПОДБОР ПЕРМЬ. Помощь в покупке автомобиля. Быстро! С Гарантией!"/>
+    <meta property="og:description" content="Помощь в покупке Б/У автомобилей, защита от мошенничества при покупке."/>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="design/style_1548431656_0896.css">
+    <link rel="stylesheet" type="text/css" href="design/responsive.css">
+    <link rel="shortcut icon" href="design/favicon.ico"/>
+
+    <script src="2.0/loader_pkg_full_lazy_true.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="javascript/libs/jquery.jcarousel.min.js"></script>
+    <script src="javascript/libs/jquery.maskedinput.min.js"></script>
+    <script src="javascript/main_1548431656_0897.js"></script>
+    
+
+    <title>АВТОПОДБОР ПЕРМЬ. Помощь в покупке автомобиля. Быстро! С Гарантией!</title>
+    <meta name="description" content="Наша команда профессионально занимается подбором подержанных автомобилей по заданным клиентом критериям, а так же диагностикой автомобилей перед покупкой. Быстро! С Гарантией технической и юридической чистоты. Наши услуги окупаются на этапе обоснованного ТОРГА с продавцом в 90% случаях."/>
+</head>
+<body>
+
+<!-- start: меню (фиксированное сверху) -->
+<nav>
+    <div class="container clear">
+        <div class="logo">
+            <img class="logo__image" src="design/img/logo5.png" alt="auto style"/>
+            <!--<img src="design/img/logo_1.png">
+            <img src="design/img/logo_2.png">
+            <div>АВТО-ПОДБОР ПЕРМЬ</div>-->
+
+        </div>
+        <ul class="clear nav-menu-hamburg">
+            <li><span data-block="3">Преимущества</span></li>
+            <li><span data-block="7">Услуги</span></li>
+            <li><span data-block="8">Акции</span></li>
+            <li><span data-block="9">Дистанционная проверка</span></li>
+            <li><span data-block="15">Контакты</span></li>
+        </ul>
+        <div class="fontawe"><a href="#" class="menu-open"><i class="fas fa-bars"></i></a></div>
+        <div class="contacts nav-phone">
+            <div class="phone">
+                +7 (342) <a href="tel:2027374"><span>202-73-74</span></a>
             </div>
-
-
-            <div class="post-header">
-                <div class="inner">
-                    <h1 contenteditable="true" id="id-block2">Металлопрокат, изделия из цветного металла</h1>
-                    <h2 contenteditable="true" id="id-block3">
-                        Срочная доставка различных видов товаров из любых металлов
-                    </h2>
-                </div>			
+            <div class="work">
+                с 9:00 до 21:00 без выходных
             </div>
-            <div class="post-header-shadow"></div>
+        </div>
 
-            <div class="promo">
-                <div class="inner clearfix">
-                    <div class="block-list" contenteditable="true" id="id-block4">
-						<img src="i/promo.jpg" alt=""></div>
-                    <div class="block-timer">
+    </div>
+        <div class="menu-overlay"></div>
+        <div class="side-menu-wrapper">
+            <a href="#" class="menu-close">×</a>
+            <ul>
+                <li><span data-block="3">Преимущества</span></li>
+                <li><span data-block="7">Услуги</span></li>
+                <li><span data-block="8">Акции</span></li>
+                <li><span data-block="9">Дистанционная проверка</span></li>
+                <li><span data-block="15">Контакты</span></li>
 
-                        <div class="title" contenteditable="true" id="id-block5">Можем порезать, сварить,<br>
-оцинковать или согнуть любые<br>
-трубы.</div>
+            </ul>
+        </div>
 
-                        <div class="timer" id="timer">
-                            <div class="title" contenteditable="true" id="id-block6">
-                                До конца недели
-                            </div>
-                            <div class="post-title" contenteditable="true" id="id-block7">
-                                Уникальное предложение<br> по цене на все трубы
-                            </div>
-                            <p>
-                                Осталось мало времени:
-                            </p>
-                            <span class="number-wrapper mar-rig1">
-                                <span class="number days">5</span>
-                                <hr></span>
-                            <span class="number-wrapper">
-                                <span class="number hurses">09</span>
-                                <hr></span>
-                            <span class="number-wrapper mar-rig">
-                                <span class="number"></span>
-                                <hr></span>
-                            <span class="number-wrapper">
-                                <span class="number minutes">38</span>
-                                <hr></span>
-                            <span class="number-wrapper mar-rig">
-                                <span class="number"></span>
-                                <hr></span>
-                            <span class="number-wrapper">
-                                <span class="number secunds">40</span>
-                                <hr></span>
-                            <span class="number-wrapper end">
-                                <span class="number"></span>
-                                <hr></span>
-                            <div class="clearfix"></div>
-                            <div class="string-time">
-                                <span class="ddays">Дней</span>
-                                <span class="hhours">Часов</span>
-                                <span class="mminutes">Минут</span>
-                                <span class="ssecunds">Часов</span>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
+</nav>
+<!-- end: меню (фиксированное сверху) -->
+
+<!-- start: главный блок с машиной и формой -->
+<section id="block_1">
+    <div class="container">
+        <div class="icon_1">
+            в <span>90%</span> <br> услуги бесплатны
+            <span class="additional_text">(За счёт торга)</span>
+        </div>
+        <div class="text_1">
+            <div class="main_header margin_bottom">ПРОФЕССИОНАЛЬНЫЙ ПОДБОР ЧЕСТНЫХ АВТОМОБИЛЕЙ С ПРОБЕГОМ</div>
+            <div class="main_header">ЗА 3 ДНЯ</div>
+<!--            <span class="bottom_title">
+                С гарантией технической и юридической чистоты
+            </span>-->
+        </div>
+        <div class="text_2">
+            Мы поможем вам удачно <b>подобрать</b>, тщательно <b>проверить</b> и <b>выгодно</b><br/> купить поддержанный<br/> автомобиль!
+<!--            Профессиональный подбор и диагностика<br> ЧЕСТНЫХ автомобилей с пробегом,<br> за 3 дня! С Гарантией!-->
+<!--            Мы поможем вам удачно подобрать,<br> тщательно проверить и выгодно<br> купить подержанный<br> автомобиль!-->
+        </div>
+        <div class="text_3">
+            Работаем по всей РФ <span class="flag_rf"></span>
+        </div>
+
+        <div class="video_button">
+            Как мы работаем. НАЖМИ МЕНЯ!
+        </div>
+
+        <div class="form_1">
+            <div class="main_title">
+                <span>О</span>ставьте заявку
+            </div>
+            <div class="sub_title">И мы подберем для Вас <br> лучший автомобиль</div>
+            <form action="send.php" method="post">
+            <input type="text" name="name" placeholder="Введите имя" required >
+            <input type="text" name="phone" placeholder="Введите телефон" required >
+            <div class="text_error">Заполните все поля!</div>
+            <button type="submit" class="button">Оставить заявку</button>
+			</form>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- end: главный блок с машиной и формой -->
+
+<!-- start: логотипы компаний -->
+<section id="block_2"></section>
+<!-- end: логотипы компаний -->
+
+<!-- start: преимущества -->
+<section id="block_3">
+    <div class="main_title">
+        <span>П</span>реимущества
+    </div>
+    <div class="items clear">
+        <div class="item">
+            <div class="icon">
+                <div class="content"></div>
+            </div>
+            <div class="title">Надежный автомобиль</div>
+            <div class="text">
+                Проверяем техническое состояние и юридическую чистоту автомобиля.
+            </div>
+        </div>
+        <div class="item">
+            <div class="icon">
+                <div class="content"></div>
+            </div>
+            <div class="title">Лучшая цена</div>
+            <div class="text">
+                Всегда есть отличные варианты!
+            </div>
+        </div>
+        <div class="item">
+            <div class="icon">
+                <div class="content"></div>
+            </div>
+            <div class="title">Фактически бесплатно</div>
+            <div class="text">
+                Наши услуги окупаются на этапе обоснованного торга
+            </div>
+        </div>
+        <div class="item">
+            <div class="icon">
+                <div class="content"></div>
+            </div>
+            <div class="title">Уверены и спокойны</div>
+            <div class="text">
+                Сопровождаем весь процесс покупки
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end: преимущества -->
+
+<!-- start: достижения -->
+<section id="block_4">
+    <div class="items clear">
+        <div class="item">
+            <div class="icon">3</div>
+            <div class="text">Года успешной работы</div>
+        </div>
+        <div class="item">
+            <div class="icon">85%</div>
+            <div class="text">Машин были куплены ниже рыночной стоимости</div>
+        </div>
+        <div class="item">
+            <div class="icon">7</div>
+            <div class="text">Часов рекорд с момента обращения до покупки авто</div>
+        </div>
+        <div class="item">
+            <div class="icon">381</div>
+            <div class="text">Успешная сделка</div>
+        </div>
+        <div class="item">
+            <div class="icon">100%</div>
+            <div class="text">Наши клиенты рекомендуют нас своим друзьям</div>
+        </div>
+        <div class="item">
+            <div class="icon">
+                <div class="key"></div>
+            </div>
+            <div class="text">Подбираем автомобиль под ключ</div>
+        </div>
+    </div>
+</section>
+<!-- end: достижения -->
+
+<!-- start: диагностика машины -->
+<section id="block_5">
+    <div class="main_title">
+        <span>Д</span>иагностика машины
+    </div>
+    <div class="sub_title">
+        Мы проверяем все!
+    </div>
+
+    <div class="items items_1 clear">
+        <div class="item">
+            <div class="align" data-id="1">Приборы</div>
+        </div>
+        <div class="item">
+            <div class="align" data-id="2">Впуск</div>
+        </div>
+        <div class="item">
+            <div class="align" data-id="3">Двигатель</div>
+        </div>
+        <div class="item">
+            <div class="align" data-id="4">Коробка (ккп)</div>
+        </div>
+        <div class="item">
+            <div class="align" data-id="5">АКБ</div>
+        </div>
+    </div>
+
+    <div class="items items_2 clear">
+        <div class="block_item">
+            <div class="item">
+                <div class="align" data-id="6">Турбина</div>
+            </div>
+            <div class="item">
+                <div class="align" data-id="8">Кузов</div>
+            </div>
+        </div>
+        <div class="block_auto">
+            <!-- только картинка -->
+        </div>
+        <div class="block_item">
+            <div class="item">
+                <div class="align" data-id="7">Юр. чистоту</div>
+            </div>
+            <div class="item">
+                <div class="align" data-id="9">Салон</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="items items_3 clear">
+        <div class="item">
+            <div class="align" data-id="10">Выпуск</div>
+        </div>
+        <div class="item">
+            <div class="align" data-id="11">Колеса</div>
+        </div>
+        <div class="item">
+            <div class="align" data-id="12">Подвеска</div>
+        </div>
+        <div class="item">
+            <div class="align" data-id="13">Рулевое</div>
+        </div>
+        <div class="item">
+            <div class="align" data-id="14">Тормоза</div>
+        </div>
+    </div>
+
+    <div class="button form_1_show" data-id="74695" data-target="popup_form" data-title="<span>О</span>ставить заявку на подбор">Оставить заявку на подбор
+    </div>
+
+    <div class="popup" data-id="1">
+        <div class="content">
+            <div class="close">×</div>
+            <div class="title">Приборы</div>
+            <div class="description">Проверка правильной работы бортового компьютера, его показаний, а также основные
+                функции приборной доски.
+            </div>
+            <div class="photo">
+                <img src="design/img/diagnostics_1.jpg" alt="photo">
+            </div>
+        </div>
+    </div>
+    <div class="popup" data-id="2">
+        <div class="content">
+            <div class="close">×</div>
+            <div class="title">Впуск</div>
+            <div class="description">Проверяем работу всех электронных систем, и механических узлов контролируемых этими
+                приборами.
+            </div>
+            <div class="photo">
+                <img src="design/img/diagnostics_2.jpg" alt="photo">
+            </div>
+        </div>
+    </div>
+    <div class="popup" data-id="3">
+        <div class="content">
+            <div class="close">×</div>
+            <div class="title">Двигатель</div>
+            <div class="description">Осмотр двигателя на предмет подтеков технических жидкостей, наличие посторонних
+                шумов в работе. Оценка состояния технических жидкостей. Замер компрессии.
+            </div>
+            <div class="photo">
+                <img src="design/img/diagnostics_3.jpg" alt="photo">
+            </div>
+        </div>
+    </div>
+    <div class="popup" data-id="4">
+        <div class="content">
+            <div class="close">×</div>
+            <div class="title">Коробка (кпп)</div>
+            <div class="description">АКПП: Компьютерная диагностика АКПП. Тест-драйв. Выявление неисправностей в работе
+                АКПП. Проверка уровня и состояния жидкости в АКПП. <br> <br> МКПП: проверка сцепления, тест-драйв авто,
+                проверка включения всех скоростей, выявление посторонних шумов в работе КПП.
+            </div>
+            <div class="photo">
+                <img src="design/img/diagnostics_4.jpg" alt="photo">
+            </div>
+        </div>
+    </div>
+    <div class="popup" data-id="5">
+        <div class="content">
+            <div class="close">×</div>
+            <div class="title">Акб</div>
+            <div class="description">Проверка даты выпуска, срока службы, напряжения и работоспособности.</div>
+            <div class="photo">
+                <img src="design/img/diagnostics_5.jpg" alt="photo">
+            </div>
+        </div>
+    </div>
+    <div class="popup" data-id="6">
+        <div class="content">
+            <div class="close">×</div>
+            <div class="title">Турбина</div>
+            <div class="description">Проверка состояния турбины, давления наддува, отсутствие масляных подтеков.</div>
+            <div class="photo">
+                <img src="design/img/diagnostics_14.jpg" alt="photo">
+            </div>
+        </div>
+    </div>
+    <div class="popup" data-id="7">
+        <div class="content">
+            <div class="close">×</div>
+            <div class="title">Юр. чистоту</div>
+            <div class="description">Криминалистическая экспертиза автомобиля. Проверка по нескольким площадкам на
+                предмет залога, ДТП, кредитного авто, запрет на рег. действия, ограничения.
+            </div>
+            <div class="photo">
+                <img src="design/img/diagnostics_6.jpg" alt="photo">
+            </div>
+        </div>
+    </div>
+    <div class="popup" data-id="8">
+        <div class="content">
+            <div class="close">×</div>
+            <div class="title">Кузов</div>
+            <div class="description">Проверка кузова автомобиля. Выявление крашеных деталей и признаков ДТП. Определение
+                степени серьезности и качества кузовного ремонта.
+            </div>
+            <div class="photo">
+                <img src="design/img/diagnostics_13.jpg" alt="photo">
+            </div>
+        </div>
+    </div>
+    <div class="popup" data-id="9">
+        <div class="content">
+            <div class="close">×</div>
+            <div class="title">Салон</div>
+            <div class="description">Оценка состояния салона. По состоянию салона можно определить отношение человека к
+                автомобилю. Также салон один из косвенных факторов, по которому можно определить истинный пробег
+                автомобиля.
+            </div>
+            <div class="photo">
+                <img src="design/img/diagnostics_7.jpg" alt="photo">
+            </div>
+        </div>
+    </div>
+    <div class="popup" data-id="10">
+        <div class="content">
+            <div class="close">×</div>
+            <div class="title">Выпуск</div>
+            <div class="description">Современные автомобили с нормами токсичности ЕВРО-3 и выше, имеют дорогостоящие
+                элементы в системе выхлопа, такие как нейтрализатор выхлопных газов, стоимость которого достигает 70 000
+                руб.
+            </div>
+            <div class="photo">
+                <img src="design/img/diagnostics_12.jpg" alt="photo">
+            </div>
+        </div>
+    </div>
+    <div class="popup" data-id="11">
+        <div class="content">
+            <div class="close">×</div>
+            <div class="title">Колеса</div>
+            <div class="description">Осмотр состояние колес: равномерность износа, дата производства, состояние и марка
+                шин. Важный момент при покупке автомобиля.
+            </div>
+            <div class="photo">
+                <img src="design/img/diagnostics_11.jpg" alt="photo">
+            </div>
+        </div>
+    </div>
+    <div class="popup" data-id="12">
+        <div class="content">
+            <div class="close">×</div>
+            <div class="title">Подвеска</div>
+            <div class="description">Элементы подвески на прямую влияют на управляемость автомобиля, на его устойчивость
+                и плавность хода.
+            </div>
+            <div class="photo">
+                <img src="design/img/diagnostics_10.jpg" alt="photo">
+            </div>
+        </div>
+    </div>
+    <div class="popup" data-id="13">
+        <div class="content">
+            <div class="close">×</div>
+            <div class="title">Рулевое</div>
+            <div class="description">Наличие люфтов, течей, стуков в рулевом управлении. Уровень рабочей жидкости,
+                состояние рулевой рейки и работоспособность усилителя руля.
+            </div>
+            <div class="photo">
+                <img src="design/img/diagnostics_9.jpg" alt="photo">
+            </div>
+        </div>
+    </div>
+    <div class="popup" data-id="14">
+        <div class="content">
+            <div class="close">×</div>
+            <div class="title">Тормоза</div>
+            <div class="description">Проверяем состояние тормозных механизмов, дисков, колодок, антиблокировочной,
+                антипробуксовочной систем и антизаноса.
+            </div>
+            <div class="photo">
+                <img src="design/img/diagnostics_8.jpg" alt="photo">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end: диагностика машины -->
+
+<!-- start: как мы работаем -->
+<section id="block_6">
+    <div class="main_title">
+        Как мы работаем
+    </div>
+    <div class="buttons clear">
+        <div class="button active">Кратко</div>
+        <div class="button">Подробно</div>
+    </div>
+
+    <div class="container">
+        <div class="slide small active">
+            <div class="text text_1">
+                Решили приобрести авто
+            </div>
+            <div class="text text_2">
+                Обратились к нам
+            </div>
+            <div class="text text_3">
+                Получили автомобиль <br> в своем бюджете
+            </div>
+            <div class="title">
+                Авто-подбор Пермь
+            </div>
+        </div>
+        <div class="slide full">
+            <div class="sub_title">
+                Мы будем сопровождать Вас на всех этапах покупки автомобиля: <br> от мысли о покупке - до результата
+            </div>
+            <div class="items clear">
+                <div class="item clear">
+                    <div class="icon">1</div>
+                    <div class="text">
+                        <div class="title">Первый день</div>
+                        Обращение к нам, консультация, заключение договора
                     </div>
-                    <div class="block-form">
-                        <form class="fck" action="form/form.php" method="POST"><input type="hidden" name="type" value="catalog"><div class="title" contenteditable="true" id="id-block8">Отправьте заявку</div>
-                            <p contenteditable="true" id="id-block9">
-                                На получение прайс-листа <br>
-                                по электронной почте.
-                            </p>
-                            <div>
-                                <input class="<?php if ($ini['name_required']) print 'required';?>" placeholder="Ваше имя" type="text" name="name"></div>
-                            <div>
-                                <input class="<?php if ($ini['phone_required']) print 'required';?> phone" placeholder="Ваш телефон" type="text" name="phone"></div>
-                            <div>
-                                <input data-valid="email" class="<?php if ($ini['email_required']) print 'required';?>" placeholder="Ваша электропочта" type="text" name="email"></div>
-                            <?php if ($ini['catalog_file']) { ?><p class="note">Прайс-лист высылается автоматически</p><?php } ?>
-                            <div>
-                                <input class="btn" type="submit" name="sub" value="Отправить"></div>
-
-                        </form>
+                </div>
+                <div class="item">
+                    <div class="icon">3</div>
+                    <div class="text">
+                        <div class="title">Заверщающий этап</div>
+                        Выезд с Вами на просмотр найденого авто, контрольная проверка и покупка автомобиля
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon">2</div>
+                    <div class="text">
+                        <div class="title">От двух до восьми дней</div>
+                        Поиск авто с фотоотчетами Вам на почту
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon">4</div>
+                    <div class="text">
+                        <div class="title">И вот Вы владелец нового автомобиля</div>
+                        Если потребуется - можем сопроводить в ГИБДД или перегнать автомобиль до Вашего дома
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+<!-- end: как мы работаем -->
 
-            <div class="ags">
-                <div class="inner">
-					<div contenteditable="true" id="id-block11">
-                    <ul><li>
-                            <span>7</span>
-                            <p>
-                                Лет безупречной работы <br>
-                                на российском рынке
-                            </p>
-                        </li>
-                        <li>
-                            <span>79</span>
-                            <p>
-                                Постоянных <br>
-                                клиентов
-                            </p>
-                        </li>
-                        <li>
-                            <span>758</span>
-                            <p>
-                                <span>тонн</span> металла<br>продано в прошлом месяце
-                            </p>
-                        </li>
-                    </ul></div>
-                </div>
+<!-- start: наши услуги -->
+<section id="block_7">
+    <div class="main_title">
+        <span>Н</span>аши услуги
+    </div>
+
+    <div class="items clear">
+        <div class="item">
+            <div class="title">
+                <div class="align">Выездная диагностика автомобиля</div>
+            </div>
+            <div class="icon"></div>
+            <ul>
+                <li class="active">Тщательная проверка автомобиля по 55 параметрам</li>
+                <li class="active">Проверка ЛКП и кузова авто на ДТП</li>
+                <li class="active">Компьютерная диагностика авто</li>
+                <li class="active">Проверка юридической чистоты</li>
+                <li class="active">Диагностика двигателя и КПП</li>
+                <li class="active">Аргументированный торг с продавцом</li>
+                <li class="active">Тест-драйф авто</li>
+            </ul>
+            <div class="price">От 1490 руб.</div>
+            <div class="button form_1_show" data-id="64838" data-target="service1490"
+                 data-title="<span>З</span>аказать выездную <br> диагностику автомобиля">Заказать
+            </div>
+        </div>
+        <div class="item">
+            <div class="title">
+                <div class="align">Авто-эксперт на день</div>
+            </div>
+            <div class="icon"></div>
+            <ul>
+                <li class="active">Все преимущества ВЫЕЗДНОЙ ДИАГНОСТИКИ</li>
+                <li class="active">Диагностический лист на фирменном бланке</li>
+                <li class="active">Оценка реальной стоимости авто</li>
+                <li class="active">Расчет суммы вложений</li>
+                <li class="active">Осмотр автомобиле в течении дня</li>
+                <li class="active">Возможность перемещения на машине эксперта</li>
+                <li class="active">Не ограниченное кол-во осмотров в течении дня</li>
+                <li class="active">Стоимость выгоднее, чем при разовом выезде</li>
+            </ul>
+            <div class="price">От 3990 руб.</div>
+            <div class="button form_1_show" data-id="34774" data-target="service3990"
+                 data-title="<span>З</span>аказать авто-эксперта на день">
+                Заказать
+            </div>
+        </div>
+        <div class="item">
+            <div class="title">
+                <div class="align">Подбор автомобиля <br> "ПОД КЛЮЧ"</div>
+            </div>
+            <div class="icon"></div>
+            <ul>
+                <li class="active">Все преимущества ВЫЕЗДНОЙ ДИАГНОСТИКИ</li>
+                <li class="active">Экономия личного времени, денег и нервов</li>
+                <li class="active">Подбор автомобиля под требования заказчика</li>
+                <li class="active">Отчеты о работе отправляем вам на почту</li>
+                <li class="active">Сопровождение покупки</li>
+                <li class="active">Поиск автомобиля до результата</li>
+                <li class="active">Возможность получить лучший автомобиль, за свои деньги</li>
+                <li class="active">Помощь в оформлении документов</li>
+                <li class="active">Проводим аргументированный ТОРГ с продавцом</li>
+            </ul>
+            <div class="price">От 7990 руб.</div>
+            <div class="button form_1_show" data-id="69267" data-target="service7990"
+                 data-title="<span>З</span>аказать подбор <br> автомобиля &quot;ПОД КЛЮЧ&quot;">Заказать
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end: наши услуги -->
+
+<!-- start: диагностика автомобиля -->
+<section id="block_8">
+    <div class="main_title">
+        <span>П</span>олная компьютерная диагностика автомобиля
+    </div>
+    <div class="sub_title">
+        Всего за 1200 рублей! Акция, успевайте!
+    </div>
+    <div class="items clear">
+        <div class="item">
+            <div class="title">«Если что-то барахлит...»</div>
+            <ul>
+                <li>Мы сами приедем к вашему автомобилю в удобное вам время.</li>
+                <li>Проведем компьютерную диагностику, при которой происходит чтение кодов неисправностей на основных
+                    узлах.
+                </li>
+                <li>Определим малейшие изменения в работе важнейших систем: управления двигателем, трансмиссией, панели
+                    приборов.
+                </li>
+                <li>Сделаем экспертное заключение о состоянии вашего автомобиля.
+                </li>
+                <li>Расскажем о дальнейших действия в зависимости от состояния систем вашего автомобиля.</li>
+            </ul>
+        </div>
+        <div class="item auto"></div>
+    </div>
+    <div class="button form_1_show" data-id="74695" data-target="diagnostic"
+         data-title="<span>З</span>аказать компьютерную <br> диагностику автомобиля">
+        Заказать
+    </div>
+</section>
+<!-- end: диагностика автомобиля -->
+
+<!-- start: дистанционная проверка -->
+<section id="block_9">
+    <div class="main_title">
+        <span>Д</span>истанционная проверка авто
+    </div>
+    <div class="buttons clear">
+        <div class="item active">
+            <div class="service">Об услуге</div>
+        </div>
+        <div class="item">
+            <div class="number">1</div>
+            <div class="name">Оставте заявку</div>
+        </div>
+        <div class="item">
+            <div class="number">2</div>
+            <div class="name">Оплата услуги</div>
+        </div>
+        <div class="item">
+            <div class="number">3</div>
+            <div class="name">Проверяем авто</div>
+        </div>
+    </div>
+    <div class="slides clear">
+        <div class="item clear active">
+            <div class="icon"></div>
+            <div class="text">
+                Услуга будет очень интересна для иногородних жителей. Тем кто не хочет тратить впустую время и деньги!
+                Бесполезными поездками на осмотр автомобиля в Пермь или другой город в Пермском крае? Мы поможем решить
+                вам эту проблему!
+            </div>
+        </div>
+        <div class="item clear">
+            <div class="icon"></div>
+            <div class="text">Вы оставляете заявку на сайте. Обязательно указываете свои контактные данные и телефон
+                продавца автомобиля. Убедитесь в том, что автомобиль еще не продан!
+            </div>
+        </div>
+        <div class="item clear">
+            <div class="icon"></div>
+            <div class="text">Мы скидываем вам реквизиты карты Сбербанк (или любого другого электронного способа оплаты)
+                для оплаты услуги.
+            </div>
+        </div>
+        <div class="item clear">
+            <div class="icon"></div>
+            <div class="text">Мы проверяем автомобиль, делаем качественные фотографии повреждений, сколов и царапин
+                (если они присутствуют), салона, подкапотного пространства, составляем техническое заключение по машине,
+                и отправляем его вам по электронной почте.
+            </div>
+        </div>
+    </div>
+    <div class="description">
+        Тем самым вы будете уверены в том стоит ли ехать <br> в город, за данной моделью, или не стоит!
+        <br> <span>Цена 2490 руб.</span>
+    </div>
+    <div class="button form_1_show" data-id="74695" data-target="distance_diagnostic"
+         data-title="<span>З</span>аказать дистанционную <br> проверку автомобиля">
+        Оставить заявку
+    </div>
+</section>
+<!-- end: дистанционная проверка -->
+
+<!-- start: гарантии -->
+<section id="block_10">
+    <div class="main_title">
+        <span>М</span>ы даем три вида гарантии
+    </div>
+    <div class="items clear">
+        <div class="item">
+            <div class="title">
+                <div class="align">Гарантия юридической чистоты</div>
+            </div>
+            <div class="text">Вы приобретаете автомобиль без кредитных и залоговых обязательств, запрета на регистрацию
+                и других ограничений.
+            </div>
+            <div class="button" data-id="1">Подробнее</div>
+        </div>
+        <div class="item">
+            <div class="title">
+                <div class="align">Гарантия 100% <br> возврата денег</div>
+            </div>
+            <div class="text">Если мы не сможем найти для Вас требуемый автомобиль в установленные сроки - вернем
+                предоплату в полном обьеме.
+            </div>
+            <div class="button" data-id="2">Подробнее</div>
+        </div>
+        <div class="item">
+            <div class="title">
+                <div class="align">Техническая гарантия</div>
+            </div>
+            <div class="text">Мы гарантируем вам 100% исправность технического состояния автомобиля, мы уверены в своей
+                работе.
+            </div>
+            <div class="button" data-id="3">Подробнее</div>
+        </div>
+    </div>
+
+    <div class="popup" data-id="1">
+        <div class="content">
+            <div class="close">×</div>
+            <div class="title">Гарантия юридической чистоты</div>
+
+            <p>Автомобиль проходит ряд проверок:</p>
+
+            <span>- Криминалистическую экспертизу.</span>
+            <div>
+                На предмет замены оригинального VIN-кода, так называемой "перебивки". На предмет подделки документов.
+                Оригинальность ПТС и СТС. На наличие всех табличек, наклеек и маркировок кузова и номерных агрегатов. На
+                соответствие документов автомобилю. На соответствие контрольных номеров автомобиля и документов.
+            </div>
+            <br>
+            <span>- Проверку по базам ГИБДД и Бюро Кредитных Историй на отсутствие:</span>
+            <div>Ограничений, залоговых обязательств, зафиксированных ДТП, о постановке и снятии на учет.</div>
+        </div>
+    </div>
+    <div class="popup" data-id="2">
+        <div class="content">
+            <div class="close">×</div>
+            <div class="title">Гарантия 100% возврата денег</div>
+            <div class="text_1">- Компания АВТОПОДБОР ПЕРМЬ, уверена в своей работе, а несколько десятков подобранных
+                машин и довольных клиентов, позволяют давать нам такую гарантию!
+            </div>
+            <div class="text_1">- В случае, если мы не сможем найти для Вас требуемый автомобиль, мы вернем Вам
+                предоплату в полном объеме!
+            </div>
+        </div>
+    </div>
+    <div class="popup" data-id="3">
+        <div class="content">
+            <div class="close">×</div>
+            <div class="title">Техническая гарантия</div>
+            <div class="text_1">Мы гарантируем вам 100% исправность технического состояния автомобиля, мы уверены в
+                своей работе.
+            </div>
+            <div class="text_1">Все технические неисправности мы выявляем на моменте осмотра авто, предоставляя вам
+                самую подробную информацию.
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end: гарантии -->
+
+<!-- start: отзывы -->
+<section id="block_11">
+    <div class="main_title">
+        <span>О</span>тзывы
+    </div>
+    <div class="slider-wrapper">
+        <div class="slider review_slider">
+            <ul>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+            </ul>
+        </div>
+        <a href="#" class="control-prev">&lsaquo;</a>
+        <a href="#" class="control-next">&rsaquo;</a>
+    </div>
+
+</section>
+<!-- end: отзывы -->
+
+<!-- start: почему "мы" -->
+<section id="block_13">
+    <div class="main_title">
+        <span>П</span>очему стоит обратиться именно к нам
+    </div>
+    <div class="items clear">
+        <div class="item">
+            <div class="item_title">Самостоятельная покупка авто с пробегом</div>
+            <div class="icon"></div>
+
+            <div class="title">Выбор из сотен предложений</div>
+            <div class="description">Следствие - вам приходится часами изучать сайты, газеты и т.п., чтобы найти хоть
+                что-то понравившееся.
             </div>
 
-            <div class="why">
-                <div>
-                    <div>
-                        <div class="inner clearfix">
-                            <div class="title" contenteditable="true" id="id-block12">
-                                5 причин купить у нас
-                            </div>
-							<div contenteditable="true" id="id-block13">
-                            <ul><li class="c1">
-									<div class="why-img">
-										<img src="i/couse1.png" alt=""></div>
-                                    <p>
-                                        Срочная доставка <br>
-                                        на следующий день <br>
-                                        после заказа!
-                                    </p>
-                                </li>
-                                <li class="c2">
-									<div class="why-img">
-										<img src="i/couse2.png" alt=""></div>
-                                    <p>
-                                        Доставляем в <br>
-                                        любую точку <br>
-                                        Москвы и области
-                                    </p>
-                                </li>
-                                <li class="c3">
-									<div class="why-img">
-										<img src="i/couse3.png" alt=""></div>
-                                    <p>
-                                        Самые ходовые <br>
-                                        диаметры всегда <br>
-                                        в наличии
-                                    </p>
-                                </li>
-                                <li class="c4">
-									<div class="why-img">
-										<img src="i/couse4.png" alt=""></div>
-                                    <p>
-                                        Собственный<br>
-                                        склад и погрузчик<br>
-                                        в Москве работают <br>
-                                        круглосуточно
-                                    </p>
-                                </li>
-                                <li class="c5">
-									<div class="why-img">
-										<img src="i/couse5.png" alt=""></div>
-                                    <p>
-                                        Можем порезать,<br>
-                                        сварить и согнуть<br>
-                                        любое количество<br>
-                                        труб
-                                    </p>
-                                </li>
-                            </ul></div>
-                        </div>
-                    </div>
-                </div>
+            <div class="title">Придется заплатить за <br> диагностику в сервисе</div>
+            <div class="description">Следствие - очередная трата времени и денег.</div>
+
+            <div class="title">Авто может быть в залоге у <br> банка или вообще в розыске</div>
+            <div class="description">Следствие - опять траты на проверки. А если не проверять, то можно сильно пожалеть
+                в последствии, когда машину заберут по решению суда.
             </div>
 
-            <div class="scheme">
-                <div class="scheme-shadow">
-                    <div>
-                        <div class="title" contenteditable="true" id="id-block14">Схема работы</div>                      
-                        <div class="inner">
-							<div contenteditable="true" id="id-block15">
-                            <ul><li class="step1">
-                                    Вы отправляете <br>
-                                    заявку и получаете <br>
-                                    прайс по почте                       
-                                </li>
-                                <li class="sep">
-                                <li class="step2">
-                                    Наш менеджер<br>
-                                    связывается с вами <br>
-                                    и обговаривает детали <br>
-                                    вашего заказа
-                                </li>
-                                <li class="sep">
-                                <li class="step3">
-                                    Вы выбираете удобный <br>
-                                    способ оплаты:<br><strong>по безналу, наличными<br>
-                                        или карточкой</strong>
-                                </li>
-                                <li class="sep">
-                                <li class="no-bg">
-                                    Согласовываем время<br>
-                                    и вы получаете заказ<br>
-                                    со всеми документами
-                                </li>
-                            </ul></div>
-                        </div>
-                    </div>
-                </div>
+            <div class="title">Чтобы сэкономить, придется аргументированно торговаться</div>
+            <div class="description">Следствие - без определенных навыков, вы просто переплатите продавцу за авто.</div>
+        </div>
+        <div class="item">
+            <div class="item_title">Мы подбираем автомобиль по вашим параметрам</div>
+            <div class="icon"></div>
+
+            <div class="title">Мы подберем предложения по вашим параметрам</div>
+            <div class="description">Уже на этом этапе мы отсеиваем большинство предложений предоставляемвам только
+                достойные внимания.
             </div>
 
-            <div class="bottom-from">
-                <div class="inner">
-                    <form action="form/form.php" method="POST"><input type="hidden" name="type" value="catalog"><div class="title" contenteditable="true" id="id-block16">Отправьте заявку и получите прайс-лист</div>
-                        <?php if ($ini['catalog_file']) { ?><p>прайс-лист высылается автоматически</p><?php } ?>
-                        <div>
-                            <input class="<?php if ($ini['name_required']) print 'required';?>" placeholder="Ваше имя" type="text" name="name"><input class="<?php if ($ini['phone_required']) print 'required';?> phone" placeholder="Ваш телефон" type="text" name="phone"><input data-valid="email" class="<?php if ($ini['email_required']) print 'required';?>" placeholder="Ваша электропочта" type="text" name="email"><input class="btn" type="submit" name="sub" value="ОТПРАВИТЬ"></div>
-                    </form>
-                </div>
+            <div class="title">Диагностику в сервисе <br> мы берём на себя</div>
+            <div class="description">Вам нужно лишь ознакомиться с результатами.</div>
+
+            <div class="title">Мы проверим авто на юридическую «чистоту»</div>
+            <div class="description">Вы будете точно знать всё о приобретаемом автомобиле и будете уверены в
+                безопасности покупки.
             </div>
 
-            <div class="reviews">
-                <div class="inner">
-                    <div class="title" contenteditable="true" id="id-block18">Отзывы о нас</div>
-					<div contenteditable="true" id="id-block19">
-                    <ul class="clearfix"><li>
-                            <img src="i/review_placeholder1.png" alt=""><div class="name">Сергей Буров</div>
-                            <div class="position">генеральный директор</div>
-                            <p>
-                                Основа нашего успеха — команда более чем из 120 человек, не один год проработавших на рынке металлопроката. Всю технологическую цепочку мы выполняем своими силами, без каких-либо посредников, и поэтому отвечаем за качество проделанной работы.
-                            </p>
-                        </li>
-                        <li>
-                            <img src="i/review_placeholder1.png" alt=""><div class="name">Александр Лесной,</div>
-                            <div class="position">начальник по снабжению</div>
-                            <p>
-                                Основа нашего успеха — команда более чем из 120 человек, не один год проработавших на рынке металлопроката. Всю технологическую цепочку мы выполняем своими силами, без каких-либо посредников, и поэтому отвечаем за качество проделанной работы.              
-                            </p>
-                        </li>
-                        <li>
-                            <img src="i/review_placeholder1.png" alt=""><div class="name">Александр Катин,</div>
+            <div class="title">Мы договоримся с продавцом <br> и максимально снизим цену</div>
+            <div class="description">Вы заплатите реальную цену за авто, а сэкономленные деньги покроют стоимость наших
+                услуг.
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end: почему "мы" -->
 
-                            <div class="position">бизнесмен</div>
-                            <p>
-                                Основа нашего успеха — команда более чем из 120 человек, не один год проработавших на рынке металлопроката. Всю технологическую цепочку мы выполняем своими силами, без каких-либо посредников, и поэтому отвечаем за качество проделанной работы.
-                            </p>
-                        </li>
-                        <li>
-                            <img src="i/review_placeholder2.png" alt=""><div class="name">Светлана Кривова</div>
+<!-- start: проблемы при покупке самостоятельно -->
+<section id="block_14">
+    <div class="main_title">
+        При покупке авто самостоятельно вы можете столкнуться <br> со следующими проблемами:
+    </div>
+    <div class="items clear">
+        <div class="item"><span>Автомобиль находится <br> в розыске или в аресте</span></div>
+        <div class="item"><span>Скрытые дефекты двигателя, трансмиссии, коробки передач, подвески</span></div>
+        <div class="item"><span>Автомобиль может находиться <br> в залоге у банка</span></div>
+        <div class="item"><span>Покупка битого, утопленного, <br> либо краденого авто</span></div>
+        <div class="item"><span>Автомобиль эксплуатировался не по правилам завода-изготовителя</span></div>
+        <div class="item"><span>Покупка автомобиля <br> со скрученным пробегом</span></div>
+    </div>
+</section>
+<!-- end: проблемы при покупке самостоятельно -->
 
-                            <div class="position">частное лицо</div>
-                            <p>
-                                Основа нашего успеха — команда более чем из 120 человек, не один год проработавших на рынке металлопроката. Всю технологическую цепочку мы выполняем своими силами, без каких-либо посредников, и поэтому отвечаем за качество проделанной работы.
-                            </p>
-                        </li>
-                    </ul></div>
-				</div>
+<!-- start: карта -->
+<section id="block_15">
+    <div id="map" class="map"></div>
+
+    <div class="container">
+        <div class="form_1">
+            <div class="main_title">
+                <span>О</span>ставьте заявку
+            </div>
+            <div class="sub_title">И мы подберем для Вас <br> лучший автомобиль</div>
+            <form action="send.php" method="post">
+            <input type="text" name="name" placeholder="Введите имя" required >
+            <input type="text" name="phone" placeholder="Введите телефон" required>
+            <div class="text_error">Заполните все поля!</div>
+            <button type="submit" class="button">Оставить заявку</button>
+			</form>
+        </div>
+    </div>
+</section>
+<!-- end: карта -->
+
+    <div class="popup_reviews">
+        <div class="content">
+            <div class="close">×</div>
+            <div class="title">
+                <span>О</span>тзывы клиентов
             </div>
 
-
-
-
-
-
-            <div class="contact">
-                <div class="inner clearfix">
-                    <div class="title" contenteditable="true" id="id-block20">Контактная информация</div>
-                    <div class="map-top"></div>                   
-                    <div id="map" data-coord="<?php if ($ini['map_point']) print $ini['map_point'];?>" data-center="<?php if ($ini['map_center']) print $ini['map_center'];?>"></div>
-                    <div class="map-rig"></div>                    
-                    <div class="panel fck" >
-                        <?php if ($ini['address']) { ?><div class="tit">Адрес:</div>
-						<p><?php print $ini['address']; ?></p>
-						<?php } ?><?php if ($ini['email']) { ?><div class="tit">Электропочта:</div>
-                        <p>
-                            <?php print chr(60).'a href="mailto:'.$ini['email'].'"'.chr(62).$ini['email'].chr(60).'/a'.chr(62);?>
-                        </p>
-						<?php } ?><?php if ($ini['phone']) { ?><div class="tit">Телефон:</div>
-                        <p>
-                            <?php print $ini['phone'];?></p>
-						<?php } ?><div class="description">
-                            <span class="open-modal call-req" data-modal="#call">Заказать звонок</span>
-                            <p contenteditable="true" id="id-block21">
-                                Закажите звонок, и свами обязательно 
-                                свяжеться один из наших менеджеров.
-                            </p>
-                        </div>
-                        <div class="mans" contenteditable="true" id="id-block22">
-                            <div>
-                                <img src="i/manager_placeholder1.png" alt=""><p>Котова Татьяна</p>
-                            </div>
-                            <div>
-                                <img src="i/manager_placeholder2.png" alt=""><p>Петренко Алексей</p>
-                            </div>
-                            <div>
-                                <img src="i/manager_placeholder1.png" alt=""><p>Кравцова Алина</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="description" data-id="74695">
+                <div id="feedback_vk"></div>
             </div>
 
-            <div class="footer">
-                <div>
-                    <div class="inner clearfix">
-                        <span class="left">© <?php print $ini['company_name'];?>, <?php print date('Y');?></span>
-                    </div>
-                </div>
-            </div>         
+        </div>
 
-            <div class="modals">			
-                <div id="call">
-                    <span class="close"></span>
-                    <form action="form/form.php" method="POST"><input type="hidden" name="type" value="call_request"><div class="title">Мы вам перезвоним!</div>
-                        <div>
-                            <input class="<?php if ($ini['name_required']) print 'required';?>" placeholder="Ваше имя" type="text" name="name"></div>
-                        <div>
-                            <input class="required phone" placeholder="Ваш телефон" type="text" name="phone"></div>
-                        <div>
-                            <input class="btn" type="submit" name="sub" value="Отправить"></div>
-                    </form>
-                </div>
+    </div>
 
-                <div id="success">
-                    <div>
-                        <span class="close"></span>
-                        <div class="title">Спасибо, ваша заявка принята!</div>
-                        <p>
-                           Наши операторы свяжутся с вами в ближайшее время, чтобы 
-провести расчет вашего заказа!
-                        </p>
-                        <span class="close-text">Закрыть</span>
-                    </div>
-                </div>
+<!-- start: подвал -->
+<footer>
+    <div class="container clear">
+        <div class="block_left">
+            <div class="title">Адрес:</div>
+            <p>ул. Героев Хасана, 92<br>офис 212 </p>
 
+            <p style="margin: 5px 0;">
+                <a href="tel:89125811888" class="tel">8 (912) 581-18-88</a>
+                <br>
+                <a href="tel:89058619999" class="tel">8 (905) 861-99-99</a>
+            </p>
+        </div>
+        <div class="block_left">
+            <div class="title">Реквизиты:</div>
+            <p>ИП Хасанов.Э.М.</p>
+            <p>ИНН 594809138882 <br> ОГРН 312594813200053</p>
+        </div>
+        <div class="block_left">
+            <div class="button form_1_show" data-id="74695" data-target="footer_form" data-title="<span>П</span>олучить бесплатную консультацию">
+                Получить
+                бесплатную консультацию
             </div>
+        </div>
+        <div class="block_right">
+            <div class="title">Наши контакты:</div>
+            <div class="phone">+7 (342) <a href="tel:2027374" class="tel"><span>202-73-74</span></a></div>
+            <div class="time">с 9:00 до 21:00 без выходных</div>
 
-            <div id="overlay"></div>
-        </div>	
-        <?php if ($ini['body_code']) include($ini['body_code']); ?><?php include 'functions_html.php'; ?></body></html>
+            <br> <br>
+
+        </div>
+    </div>
+</footer>
+<!-- end: подвал -->
+
+<!-- start: форма 1 результат (всплывашка) -->
+<div class="form_1_result">
+    <div class="content">
+        <div class="close">×</div>
+        <div class="text">Благодарим за заявку! Скоро мы Вам перезвоним.</div>
+    </div>
+</div>
+<!-- end: форма 1 результат (всплывашка) -->
+
+<!-- start: форма (всплывашка) -->
+<div class="form_2">
+    <div class="content">
+        <div class="close">×</div>
+        <div class="title"></div>
+
+        <div class="description" data-id="74695">
+            С вами свяжется специалист, в течении некоторого времени.
+        </div>
+        <div class="description" data-id="64838">
+            <ul>
+                <li>Вы уже нашли потенциально хороший автомобиль</li>
+                <li>Вы не можете приехать и посмотреть автомобиль по нескольким причинам</li>
+                <li>Он Вас устраивает, но нет возможности убедиться в его состоянии</li>
+                <li>Планируете заручиться поддержкой опытного специалиста</li>
+                <li>Не умеете, стесняетесь или не хотите торговаться</li>
+            </ul>
+        </div>
+        <div class="description" data-id="34774">
+            <ul>
+                <li>Вы уже нашли несколько потенциально хороших авто</li>
+                <li>Нет желания добираться до найденных авто на общественном транспорте</li>
+                <li>У Вас нет времени на долгие и изнурительные поиски</li>
+                <li>Не умеете, стесняетесь или не хотите торговаться</li>
+                <li>Желаете выбрать лучший вариант среди разных моделей</li>
+            </ul>
+        </div>
+        <div class="description" data-id="69267">
+            <ul>
+                <li>У Вас нет времени на долгие и изнурительные поиски</li>
+                <li>Вы желаете получить лучший автомобиль за свои деньги</li>
+                <li>Вы уже посмотрели несколько вариантов и поняли, что хороший авто найти непросто</li>
+                <li>Не имеете достаточно знаний в области автомобилей для самостоятельной проверки</li>
+                <li>Хотите быть уверенным в покупке</li>
+                <li>Планируете сэкономить на покупке автомобиля за счет нашего профессионального торга</li>
+            </ul>
+        </div>
+		
+        <form action="send.php" method="post">
+        <input type="text" name="name" placeholder="Ваше имя" required >
+        <input type="text" name="phone" placeholder="Телефон" required >
+        <div class="text_error">Заполните все поля!</div>
+        <button type="submit" class="button">Оставить заявку</button>
+		</form>
+		
+    </div>
+</div>
+<!-- start: форма (всплывашка) -->
+
+<div class="overlay"></div>
+<div class="order-popup">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/coWKRSQrFag" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<script type="reviews_template" class="reviews_template">
+    <ul>
+        <li>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/L_Hls2ee9s8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </li>
+        <li>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sONsmicRNyI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </li>
+        <li>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dPg1aPm2rm8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </li>
+        <li>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4gHmaUq3DBk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </li>
+        <li>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/g51ZRZR9pg8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </li>
+        <li>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-lhLNJhMxI4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </li>
+        <li>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4wm6105GY_M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </li>
+        <li>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7wyoqO5_oEg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </li>
+        <li>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/d-yEjGRRx0Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </li>
+        <li>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pYgObOTEdiQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </li>
+        <li>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yDLES7o0Feo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </li>
+
+    </ul>
+</script>
+
+
+<!— Вставьте эти теги в самый низ страницы вашего сайта —>
+<script src="widget/widget.js" type="text/javascript"></script>
+<script async src="javascript/responsive.js"></script>
+</body>
+</html>
