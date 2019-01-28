@@ -42,6 +42,10 @@ body i {
     margin: auto;
   }
 
+  #block_7 .item:nth-child(2) .icon-21,{
+    background-position: center;
+}
+
   #block_7 .item .button {
     width: 367px;
     display: flex;
