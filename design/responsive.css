@@ -128,7 +128,7 @@ body i {
   #block_14,
   #block_15,
   footer {
-    width: 100% !important;
+    /*width: 100% !important;*/
     /*display: none;*/
   }
 
@@ -139,7 +139,7 @@ body i {
   .container,
   .nav-menu-hamburg,
   .nav-phone {
-    width: 100% !important;
+    /*width: 100% !important;*/
     /*position: unset !important;*/
   }
   .nav-menu-hamburg,
@@ -484,33 +484,33 @@ body i {
 */
 
 .icon_1 {
-    top: 95px;
-    left: 42px;
+    /*top: 95px;*/
+    /*left: 42px;*/
 }
 
 .main_header {
-    font-size: 25px;
-    position: relative;
-    left: -73px;
+    /*font-size: 25px;*/
+    /*position: relative;*/
+    /*left: -73px;*/
 }
 
 .text_2 {
-    left:210px !important;
-    top: 148px;
+    /*left:210px !important;*/
+    /*top: 148px;*/
 }
 
 .text_3{
-    top: 560px;
-    left:0;
+    /*top: 560px;*/
+    /*left:0;*/
 }
 
 .video_button {
-    right: 562px;
+    /*right: 562px;*/
 }
 
 .form_1 {
-    top: 260px;
-    left: 630px !important;
+    /*top: 260px;*/
+    /*left: 630px !important;*/
 }
 
 }
