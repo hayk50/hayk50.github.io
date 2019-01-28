@@ -45,7 +45,7 @@ nav ul {
 
 nav li span {
 	cursor: pointer;
-	color: red !important;
+	color: black;
 	text-decoration: none;
 	font-weight: 600;
 	-webkit-text-size-adjust: 100%;

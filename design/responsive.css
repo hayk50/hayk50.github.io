@@ -21,6 +21,10 @@ body i {
 
 @media only screen and (max-width: 1186px) {
 
+nav li span {
+  color: white;
+}
+
 #block_7 .items {
     display: flex;
     flex-direction: column;
@@ -571,9 +575,6 @@ body i {
     transition: opacity 1s;
 }
 
-nav li span {
-  color: white;
-}
 
 
 }
