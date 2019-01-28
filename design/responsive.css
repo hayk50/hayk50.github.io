@@ -41,8 +41,8 @@ body i {
     height: 72px;
     line-height: 44px;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: -8px;
+    top: 2px;
     text-align: center;
     opacity: .65;
     color: #333;
