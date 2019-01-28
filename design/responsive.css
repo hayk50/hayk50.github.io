@@ -1,8 +1,9 @@
 body i {
     font-family: 'FontAwesome' !important;
     color: red;
-    font-size: 46px;
+    font-size: 100px;
     cursor: pointer;
+    margin-right: 30px;
 }
 
 #block_21 {
@@ -29,6 +30,16 @@ body i {
     width: 100% !important;
   }
 
+  nav .logo {
+  	height: 132px;
+  	width: 100%;
+  }
+
+  nav .logo img {
+  	    height: 108px;
+    margin-right: 262px;
+  }
+
   #block_1,
   #block_2,
   #block_3,
@@ -46,6 +57,10 @@ body i {
   footer {
     width: 100% !important;
     /*display: none;*/
+  }
+
+  #block_1 {
+  	margin-top: 135px;
   }
 
   .container,
@@ -87,12 +102,16 @@ body i {
 
   #block_3 .item {
     width: 750px;
+    margin-right: 0;
   }
 
   #block_3 .item .icon {
     width: 340px;
     height: 240px;
     margin: 0 auto 5px;
+        display: flex;
+    align-items: center;
+    padding-bottom: 52px;
   }
 
   #block_3 .item .text {
@@ -120,12 +139,18 @@ body i {
     width: 200px;
     height: 178px;
     font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3px;
+    border-radius: inherit;
   }
 
   #block_4 .item .text {
     font-size: 44px;
     width: 500px;
-        padding-left: 28px;
+        /*padding-left: 28px;*/
+        padding-left: 80px;
   }
 
   #block_6 .main_title {
@@ -168,6 +193,7 @@ body i {
 
   #block_8 .item ul {
     width: 930px;
+    margin-left: 4%;
   }
 
   #block_8 .item ul {
@@ -242,6 +268,7 @@ body i {
   #block_9 .slides .item .text {
     width: 1000px;
     font-size: 55px;
+    text-align: justify;
   }
 
   #block_9 .button {
@@ -262,6 +289,7 @@ body i {
 
   #block_10 .item {
     width: 980px;
+    margin-right: 0px;
   }
 
   #block_10 .item .title {
@@ -328,6 +356,7 @@ body i {
   #block_14 .item {
     width: 100%;
     margin-bottom: 200px;
+    margin-right: 0px;
   }
 
   #block_14 .item span {
@@ -344,6 +373,8 @@ body i {
   footer .block_left:nth-child(2),
   footer .block_right {
     width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
   }
 
   footer .title {
@@ -358,6 +389,7 @@ body i {
     width: 650px;
     margin-left: 1px;
     font-size: 30px;
+    margin: auto;
   }
 
 
