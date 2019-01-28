@@ -32,12 +32,14 @@ body i {
 
   nav .logo {
   	height: 132px;
-  	width: 100%;
+  	width: 400px;
   }
 
   nav .logo img {
-  	    height: 108px;
-    margin-right: 262px;
+  	height: 108px;
+    /*margin-right: 262px;*/
+    position: relative;
+    right: 21px;
   }
 
   #block_1,
