@@ -855,13 +855,13 @@ nav.active .contacts .phone a {
 	vertical-align: middle;
 }
 
-#block_7 .item .icon {
+#block_7 .item .icon-20, .icon-21, .icon-22 {
 	width: 295px;
 	height: 162px;
 	background: url(img/services_1.jpg) no-repeat;
 }
 
-#block_7 .item:nth-child(2) .icon {
+#block_7 .item:nth-child(2) .icon-21, .icon-22 .icon-23 {
 	background-position: -296px 0;
 }
 
@@ -2261,6 +2261,8 @@ footer .title {
 	position: relative;
 	margin-top: -4px;
 }
+
+
 
 @media screen and (min-width:900px) and (max-width:1300px) {
 	body {
