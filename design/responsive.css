@@ -42,9 +42,7 @@ body i {
     margin: auto;
   }
 
-  #block_7 .item:nth-child(2) .icon-21,{
-    background-position: center !important;
-}
+
 
   #block_7 .item .button {
     width: 367px;
@@ -67,6 +65,7 @@ body i {
     height: 200px;
         background: url(img/2.jpg) no-repeat;
     background-size: cover;
+    background-position: center !important;
   }
 
     #block_7 .item .icon-22 {
