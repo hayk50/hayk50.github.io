@@ -68,6 +68,10 @@ body i {
     background-position: center !important;
   }
 
+  #block_1 .form_1 {
+    left: 846px;
+  }
+
     #block_7 .item .icon-22 {
     width: 100%;
     height: 200px;
