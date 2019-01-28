@@ -49,6 +49,7 @@ nav li span {
 	text-decoration: none;
 	font-weight: 600;
 	-webkit-text-size-adjust: 100%;
+	font-size: 18px;
 }
 
 nav li span:hover {
@@ -865,7 +866,7 @@ nav.active .contacts .phone a {
 	background-position: -296px 0;
 }
 
-#block_7 .item:nth-child(3) .icon-22 {
+#block_7 .item:nth-child(3) .icon {
 	background-position: -596px 0;
 }
 
