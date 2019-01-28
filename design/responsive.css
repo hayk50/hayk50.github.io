@@ -571,5 +571,9 @@ body i {
     transition: opacity 1s;
 }
 
+nav li span {
+  color: white;
+}
+
 
 }
