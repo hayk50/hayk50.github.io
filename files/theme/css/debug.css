@@ -1,0 +1,99 @@
+p.error {
+	position: absolute;
+	color: red;
+	font-size: 14px;
+	top: 105px;
+}
+.b-make-calculation p.error {
+	top: 125px;
+}
+.b-form-order-catalog p.error {
+	top: 292px;
+}
+._rel {
+	position: relative;
+}
+input.error, textarea.error {
+	border: 1px solid red
+}
+.no-decoration{
+    text-decoration: none
+}
+.fancybox-type-iframe .fancybox-inner {
+
+overflow:hidden !important ;
+}
+
+.b-mobile-contacts .b-header__text {
+	margin-bottom: 2.25rem;
+}
+.b-product__options {
+	position:relative;
+
+}
+.b-product p.error {
+	bottom: 75px;
+	top:auto;
+	left: 585px;
+}
+
+
+.b-advantages.advantages-slider .b-advantages__right{
+	font-size:15px;
+	font-size:.9375rem;
+	font-weight:600
+	}
+	
+	.b-counter{
+		margin-bottom:36px;
+		margin-bottom:2.25rem
+		}
+		.b-counter .countdown-amount{
+			font-size:100px;
+			font-size:6.25rem;
+			font-family:'PFDIntextCompPro';
+			font-weight:200
+			}
+			
+
+
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) { @media
+{
+	.b-title-wrapper span {
+		left: 0;
+	}
+	.b-title-wrapper span span {
+		left: 0;
+	}
+}}
+@media not all and (min-resolution:.001dpcm) { @media { 
+	.b-title-wrapper span {
+		left: 0;
+
+	}
+	.b-title-wrapper span span {
+		left: 0;
+	}
+}}
+.b-contacts__item a{
+	color: white;
+	text-decoration: none;
+}
+.b-contacts__item a:hover{
+	opacity: 0.7
+}
+.b-header__right .b-phone-number{
+	text-decoration: none;
+	color: white;
+}
+.b-header__right .b-phone-number:hover{
+	opacity: 0.7;
+}
+
+.mobile .b-header__right .b-phone-number{
+	color: blue;
+}
+.mobile .b-contacts__item:first-child a,
+.mobile .b-contacts__item:nth-child(2) a{
+	color: blue;
+}
