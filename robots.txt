@@ -1,8 +1,0 @@
-#User-agent: *
-#Crawl-delay: 10
-# Directories
-#Disallow: /lib/
-#Disallow: /templates/
-# Files
-#Disallow: /_consts.php
-#Disallow: /admin.php
