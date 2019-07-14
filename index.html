@@ -1,52 +1,130 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>vendor sign-up</title>
-	<link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
 </head>
-<body>
-	<h2 class="top-title">VENDOR SIGN UP</h2>
-<form action="/action_page.php" class="vendor-form">
-  <input type="text" id="fname" name="firstname" placeholder="COMPANY NAME">
-  <select id="country" name="country">
-    <option value="australia">CATEGORY</option>
-    <option value="canada">CATEGORY 2</option>
-    <option value="usa">CATEGORY 3</option>
-  </select>
-  <input type="email" id="lname" name="lastname" placeholder="EMAIL">
-  <input type="phone" id="lname" name="lastname" placeholder="PHONE NUMBER">
-  <select id="country" name="country">
-    <option value="australia">CITY</option>
-    <option value="canada">CITY</option>
-    <option value="usa">CITY</option>
-  </select>
-  <textarea name="about" id="" cols="30" rows="10" placeholder="ABOUT"></textarea>
-<div class="add-file_1">
-<label for="">PROFILE PICTURE</label>
-<button>BROWSE</button>
-</div>
-<div class="add-file_1">
-<label for="">PHOTO ALBUM (up to 10 pictures)</label>
-<button>BROWSE</button>
-</div>
-<input type="text" id="lname" name="lastname" placeholder="Youtube video link">
-<label>Paste direct link to your youtube video . You can add more later.</label>
-<input type="text" id="lname" name="lastname" placeholder="Soundcloud Link">
-<label>Paste direct link to your soundcloud music track . If applicable.</label>
-<div class="input-price">
-	<p class="border-color">PRICE RANGE</p>
-<div class="price-text-1">
-	<p class="block-1">FROM <br>$$$</p>
-	<p class="block-3">-</p>
-    <p class="block-2">TO <br>$$$</p>
+<body >
 
-</div>
-</div>
-  <button type="submit" value="Submit" class="submit-button">SAVE</button>
 
-</form>
+    <div class="landing-page">
+        <div class="primary-image" style="background-image: url('img/1111.png')">
+            <div class="inner-text-wrap">
+                <h1>GET MORE GIGS.</h1>
+                <span class="subtitle">START RECEIVING LEADS FROM PEOPLE THAT ARE LOOKING FOR SERVICES LIKE YOURS</span>
+                <button class="btn-default-round white-color bigger get-started">Get Started</button>
+            </div>
+        </div>
+        <div class="we-connect-text">
+            <span>We connect vendors with customers who’s looking for their services in USA</span>
+        </div>
 
+
+        <section class="event-types">  
+            <div class="weddings event-type-item">
+                <div class="bg-image" style="background-image: url(img/weddings.png)"></div>
+                <span class="title">Weddings</span>
+            </div>
+
+            <div class="corporate event-type-item">
+                <div class="bg-image" style="background-image: url(img/Corporate.png)"></div>
+                <span class="title">Corporate</span>
+            </div>
+
+            <div class="private_events event-type-item">
+                <div class="bg-image" style="background-image: url(img/private-events.png)"></div>
+                <span class="title">Private Events</span>
+            </div>
+
+            <div class="clear"></div>
+        </section>
+
+        <section class="promising">
+            <div class="section-inner">
+                <h3>Transform the way you book gigs!</h3>
+                <span class="text-line">Get discovered by a couples or event planners that are looking for a services that you offer.</span>
+                <span class="text-line">EventCartel is designed to get you in front of clients looking to book. New leads are always <br>flowing to you!</span>
+
+            </div>
+        </section>
+
+
+        <section id="services-list" class="services-list-section">
+            <div class="services-list">
+                <div class="section-inner">
+                    <div class="service-item">
+                        <div class="service-i-icon"><img src="img/photos.png"></div>
+                        <div class="service-i-title">Photos</div>
+                        <div class="service-i-text">
+                            Upload up to 10 pictures of your work <br> and show your best sides!
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-i-icon"><img src="img/videos.png"></div>
+                        <div class="service-i-title">Videos</div>
+                        <div class="service-i-text">
+                            Easily paste your youtube videos <br> 
+                            into your profile, and let potential <br>
+                            customers see what you’re capable of.
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-i-icon"><img src="img/speaker.png"></div>
+                        <div class="service-i-title">Music</div>
+                        <div class="service-i-text">
+                            hare your music mixes or an <br>
+                            original songs with your fans and <br>
+                            potential customers.
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-i-icon"><img src="img/purchase.png"></div>
+                        <div class="service-i-title">Sell Merchandise</div>
+                        <div class="service-i-text">
+                            Seamless sell products and merchandise <br>
+                            within your ticketing page.
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-i-icon"><img src="img/reviews.png"></div>
+                        <div class="service-i-title">Collect Reviews</div>
+                        <div class="service-i-text">
+                            Reviews are great way to show <br>
+                            your credibility to potential clients.
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-i-icon"><img src="img/two_tikets.png"></div>
+                        <div class="service-i-title">Sell Tickets</div>
+                        <div class="service-i-text">
+                        Simply add a promoter profile and <br>
+                          start selling tickets in minutes...
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="clear"></div>
+      </section>
+
+      <section id="services" class="services-section">
+
+        <div class="tariffs">
+            <div class="section-inner">
+
+               <h2 class="section-title" style="color: white;">Pricing</h2>
+               <span class="text-line" style="color: white;">For a limited time only we offer free listings until 2020. <br> Don’t miss out on this great opportunity.</span>
+               <div class="clear"></div>
+               <div class="btn-row">
+                <button class="btn btn-default-round white-color bigger">Get started</button>
+            </div>
+
+        </div>
+    </div>
+</section>
 
 </body>
 </html>
