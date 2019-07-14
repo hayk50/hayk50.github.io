@@ -324,6 +324,25 @@ font-family: 'Lato', sans-serif;
     background: transparent;
 }
 
+.landing-page .primary-image .inner-text-wrap span.subtitle {
+	font-family: 'Lato', sans-serif;
+}
+
+.landing-page .we-connect-text {
+	font-family: 'Lato', sans-serif;
+}
+
+.landing-page section.promising h3 {
+	font-family: 'Lato', sans-serif;
+}
+
+.landing-page section.services-list-section .services-list .service-item .service-i-title {
+	font-family: 'Lato', sans-serif;
+}
+
+.landing-page section .text-line {
+	font-family: 'Lato', sans-serif;
+}
 
 html {
     width: 100%;
