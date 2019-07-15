@@ -100,7 +100,7 @@ button {
 .landing-page section.event-types .event-type-item:before {
     content: '';
     background: rgba(0, 0, 0, 0.5);
-    height: 99%;
+    height: 100%;
     width: 100%;
     position: absolute;
     left: 0;
