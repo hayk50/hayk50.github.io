@@ -113,15 +113,15 @@ html, body {
   outline: none;
   border: 1px solid;
   color: #666666;
-  height: 30px;
+  padding: 11px;
   }
 
 .event_select {
-  width: 25%;
+    width: 25%;
     border: 1px solid;
     color: #666666;
-    height: 30px;
-    margin-left: -10px;
+    margin-left: -5px;
+    padding: 10px;
 }
 
 .stars img {
