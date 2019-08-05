@@ -1,288 +1,124 @@
-body {
-  font-family: 'Lato', sans-serif;
-}
+.ticket_block {
 
-html, body {
-  height: 100%;
-  font-family: 'Lato', sans-serif;
-}
-
-.categories_header {
-  text-align: center;
-  border-bottom: 1px solid #CECECD;
-  padding-bottom: 30px;
-  padding-top: 40px;
-  margin-bottom: 40px;
-  text-transform: uppercase;
-}
-
-/* Fixed sidenav, full height */
-.sidenav {
-  height: 100%;
-  width: 25%;
-  position: relative;
-  float: left;
-  z-index: 1;
-  top: 0;
-  left: 0;
-/*  background-color: #111;
-*/  overflow-x: hidden;
-/*  padding-top: 20px;
-*/}
-
-/* Style the sidenav links and the dropdown button */
-.sidenav a, .dropdown-btn {
-  padding: 6px 8px 6px 0px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-  border: none;
-  background: white;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
-  color: #333333;
-  font-weight: bold;
-}
-
-.dropdown-btn {
-  color: #333333;
-  font-weight: bold;
-  font-family: 'Lato', sans-serif;
-
-}
-
-.dropdown-btn:hover {
-  color: #e91e63;
-}
-
-/* On mouse-over */
-/*.sidenav a:hover, .dropdown-btn:hover {
-  color: #f1f1f1;
-}*/
-
-/* Main content */
-.box_content {
-  /*margin-left: 200px;*/ /* Same as the width of the sidenav */
-  font-size: 20px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-  float: right;
-  width: 70%;
-}
-
-/* Add an active class to the active dropdown button */
-.active {
-/*  background-color: green;
-  color: white;*/
-}
-
-/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-.dropdown-container {
-  display: none;
-/*  background-color: #262626;
-  padding-left: 8px;*/
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-/* Optional: Style the caret down icon */
-.fa-caret-down {
-  float: right;
-  padding-right: 8px;
-}
-
-.inner {
-    position: relative;
-    padding: 0 0 40px 0;
-    width: 1200px;
-    padding: 0 10px 0 10px;
-    box-sizing: border-box;
+	width: 800px;
     margin: auto;
+    text-align: center;
+    background: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.menu_arrow {
-  margin-left: 10px;
+.ticket_img {
+	max-width: 100%;
+	height: auto;
+    margin-bottom: 10px;
 }
 
-.event_input {
-  width: 55%;
-  padding-left: 5px;
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
-  outline: none;
-  border: 1px solid;
-  color: #666666;
-  padding: 11px;
-  }
+.price {
+	display: flex;
+    align-items: center;
+    justify-content: ;
+    margin-left: 13px;
+}
 
-  .event_search {
-  width: 14%;
-  padding-left: 5px;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
-  outline: none;
-  border: 1px solid;
-  color: #666666;
-  padding: 11px;
-  background: white;
-  margin-left: -5px;
-  cursor: pointer;
+.sheudule {
+	display: flex;
+    align-items: center;
+    justify-content: ;
+    margin-left: 13px;
+    font-size: 16px;
+}
 
-  }
+.location {
+	display: flex;
+    align-items: center;
+    justify-content: ;
+    margin-left: 13px;
+    font-size: 16px;
+}
 
-.event_select {
-    width: 25%;
-    border: 1px solid;
-    color: #666666;
-    margin-left: -5px;
+button {
+	background: #33cc99;
     padding: 10px;
+    border-radius: 16px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    color: white;
+    font-size: 16px;
 }
 
-.stars img {
-  height: 100%;
-}
-
-.stars_number {
-  margin-left: 5px;
-}
-
-.box-block {
-  margin-top: 50px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.box_1, .box_2, .box_3, .box_4 {
-    width: 45%;
-    border: 1px solid gray;
-    padding: 2px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-
-  .box_1, .box_3 {
-    margin-right: 20px;
-  }
-
-  .box_1:hover, .box_2:hover, .box_3:hover, .box_4:hover {
-  	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  }
-
-.box_title, .stars, .box_text {
-  text-align: center;
-  color: #666666;
-}
-
-.box_title {
-  font-size: 18px;
-line-height: 20px;
-color: #666666;
-font-family: "Lato";
-font-weight: 400;
-text-align: center;
-}
-
-.box_text {
-  font-size: 14px;
-}
-
-.image-block {
-  position: relative;
+body {
+    background: #cccccc;
+    font-family: 'Rubik', sans-serif;
 
 }
 
-.image-block img {
-      max-width: 100%;
-    height: auto;
+* {
+    font-family: 'Rubik', sans-serif;
 }
 
-.featured {
-    position: absolute;
-    z-index: 1;
-    right: 0;
-    top: 15px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 15px 0 0 15px;
-    padding: 6px 12px 5px 20px;
-    box-sizing: border-box;
-    text-transform: uppercase;
-    color: #333333;
-    font-size: 12px;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-
-}
-
-.sidenav a:hover {
-  color: #e91e63;
-}
-
-
-/* Some media queries for responsiveness */
-@media screen and (max-height: 450px) {
-/*  .sidenav {padding-top: 15px;}
-*/  .sidenav a {font-size: 16px;}
-}
-
-@media (max-width: 768px) {
-  .sidenav {
-    display: none;
-  }
-  
-  .inner {
-    width: 100%;
-    padding: 0 10px 0 10px;
-  }
-
-  .box_content {
-    width: 100%;
-    padding: 0px 0px;
-    float: none;
-  }
-
-  .box-block {
-    display: block;
-  }
-
-  .box_1, .box_2, .box_3, .box_4 {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .image-block {
-    display: flex;
-    justify-content: center;
-  }
-
-  .categories_header h1 {
-    font-size: 22px;
-  }
-
-  .event_input, .event_select, .event_search {
-    width: 100%;
-    border-radius: 0px;
-    margin-left: 0px;
-  }
-
-}
-
-@media (min-width: 769px) {
-  .image-block {
-  position: relative;
-      width: 360px;
-    height: 190px;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
+.ticket_title {
+    padding-top: 40px;
+    border-bottom: 1px solid #cccccc;
+    width: 735px;   
     margin: auto;
 }
 
-.image-block img {
-    /*  max-width: 100%;
-    height: auto;*/
-    width: 360px;
-    height: 190px;
+.ticket_title h3 {
+    font-size: 35px;
+    color: #000000;
+    font-family: "Rubik";
+    font-weight: 500;
 }
 
+.ticket_title p {
+    font-size: 20px;
+}
+
+.blue-text {
+    color: #6666ff;
+}
+
+.ticket_content h1 {
+    font-size: 35px;
+    color: #000000;
+    font-family: "Rubik";
+    font-weight: 500;
+    text-align: left;
+    margin-left: 9px;
+}
+
+.ticket_info p {
+    font-size: 24px;
+    color: #000000;
+    font-family: "Rubik";
+    font-weight: 400;
+}
+
+.ticket_content {
+    width: 665px;
+    margin: auto;
+}
+
+.justify_text p {
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+}
+
+.icon img {
+    margin-right: 20px;
+}
+
+.icon {
+    margin-bottom: 20px;
+}
+
+@media screen (max-width: 455px) {
+    .ticket_content h1 {
+        font-size: 18px;
+    }
 }
