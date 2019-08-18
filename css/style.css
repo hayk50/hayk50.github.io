@@ -95,15 +95,15 @@ body {
 .box_1, .box_2, .box_3, .box_4 {
 /*	width: 45%;
 */	border: 1px solid gray;
-	padding: 2px;
-	border-radius: 3px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-	margin-bottom: 20px;
+padding: 2px;
+border-radius: 3px;
+border-top-left-radius: 0;
+border-top-right-radius: 0;
+margin-bottom: 20px;
 }
 
 .box_1:hover {
-	    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .box_1, .box_3 {
@@ -151,6 +151,15 @@ body {
 	font-family: "Lato";
 	font-weight: 400;
 	margin-bottom: 0px;
+}
+
+.black_title:hover {
+	text-decoration: underline;
+}
+
+.title_2:hover {
+	text-decoration: underline;
+
 }
 
 .time_text {
@@ -258,28 +267,28 @@ button {
 	.box_1 {
 /*		width: 80%;
 */		margin-right: 0px;
-	}
+}
 
-	.image-block img {
-		width: 100%;
-	}
+.image-block img {
+	width: 100%;
+}
 
-	.featured {
-		left: 700px;
-		top: 352px;
-		right: 0;
-	}
+.featured {
+	left: 700px;
+	top: 352px;
+	right: 0;
+}
 
-	.ticket_block, .event_title, .ticket_content {
-		width: 100%;
-	}
+.ticket_block, .event_title, .ticket_content {
+	width: 100%;
+}
 
-	.date {
-		padding-right: 10px;
+.date {
+	padding-right: 10px;
 
-	}
+}
 
-	.box_hashtag {
-		width: 70%;
-	}
+.box_hashtag {
+	width: 70%;
+}
 }
