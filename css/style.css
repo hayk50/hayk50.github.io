@@ -93,8 +93,8 @@ body {
 }
 
 .box_1, .box_2, .box_3, .box_4 {
-	width: 45%;
-	border: 1px solid gray;
+/*	width: 45%;
+*/	border: 1px solid gray;
 	padding: 2px;
 	border-radius: 3px;
     border-top-left-radius: 0;
@@ -256,8 +256,8 @@ button {
 	}
 
 	.box_1 {
-		width: 80%;
-		margin-right: 0px;
+/*		width: 80%;
+*/		margin-right: 0px;
 	}
 
 	.image-block img {
