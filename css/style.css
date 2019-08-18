@@ -152,6 +152,7 @@ margin-bottom: 20px;
 	font-weight: 400;
 	margin-bottom: 0px;
 	margin-top: 8px;
+	cursor: pointer;
 }
 
 .black_title:hover {
@@ -176,6 +177,7 @@ margin-bottom: 20px;
 	font-weight: 700;
 	margin-top: 5px;
 	margin-bottom: 10px;
+	cursor: pointer;
 }
 
 .box_text {
