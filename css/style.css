@@ -261,4 +261,8 @@ button {
 		top: 352px;
 		right: 0;
 	}
+
+	.ticket_block, .event_title, .ticket_content {
+		width: 100%;
+	}
 }
