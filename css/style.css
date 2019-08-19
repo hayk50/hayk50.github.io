@@ -184,6 +184,14 @@ margin-bottom: 20px;
 	text-align: justify;
 }
 
+.bookmark_box i:hover {
+	color: #00ff94;
+}
+
+.bookmark_box i {
+	font-size: 30px;
+}
+
 .featured {
 	position: absolute;
 	z-index: 1;
