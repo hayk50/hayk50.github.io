@@ -136,8 +136,8 @@ margin-bottom: 20px;
 }
 
 .bookmark_box {
-	margin-top: 17px;
-	margin-right: 14px;
+	    margin-top: 15px;
+    margin-right: 5px;
 }
 
 .rose_text {
@@ -190,6 +190,7 @@ margin-bottom: 20px;
 
 .bookmark_box i {
 	font-size: 30px;
+	cursor: pointer;
 }
 
 .featured {
